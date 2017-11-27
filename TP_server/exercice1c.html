@@ -1,0 +1,21 @@
+<html>
+	<head>
+	<title>Form - Ex1c</title>
+	</head>
+	<body>
+	<form action="http://localhost:8000/">
+		Name:<br>
+		<input type="text" name="name" value="John Doe">
+		<br>
+		<input type="submit" value="Submit">
+	</form> 
+		
+	<br><p>Have fun with these: <br>
+	<a href="http://localhost:8000/?name=æâ€ê¢þ©ÿû   êþÿû">name=æâ€ê¢þ©ÿû   êþÿû</a><br> 
+	<a href="http://localhost:8000/?name=<h1>">name=&lt;h1&gt;</a><br> 
+	<a href="http://localhost:8000/?name=<script>alert('coucou');</script>"> 
+	name=&lt;script&gt;alert('coucou');&lt;/script&gt;</a><br> 
+	<a href="http://localhost:8000/?name=ἄλφαβῆταγάμμα">name=ἄλφαβῆταγάμμα</a><br>
+</p> 
+	</body>
+</html>

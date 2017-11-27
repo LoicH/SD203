@@ -1,0 +1,27 @@
+digraph dom {
+0[label="html"] -> 1[label="head"];
+1[label="head"] -> 2[label="meta"];
+1[label="head"] -> 4[label="title"];
+0[label="html"] -> 7[label="body"];
+7[label="body"] -> 8[label="h1"];
+7[label="body"] -> 10[label="nav"];
+10[label="nav"] -> 11[label="ul"];
+11[label="ul"] -> 12[label="li"];
+12[label="li"] -> 13[label="a"];
+11[label="ul"] -> 16[label="li"];
+16[label="li"] -> 17[label="a"];
+11[label="ul"] -> 20[label="li"];
+20[label="li"] -> 21[label="a"];
+11[label="ul"] -> 24[label="li"];
+24[label="li"] -> 25[label="a"];
+7[label="body"] -> 30[label="div"];
+30[label="div"] -> 31[label="img"];
+30[label="div"] -> 33[label="a"];
+30[label="div"] -> 35[label="p"];
+7[label="body"] -> 38[label="div"];
+38[label="div"] -> 39[label="a"];
+38[label="div"] -> 41[label="p"];
+7[label="body"] -> 44[label="div"];
+44[label="div"] -> 45[label="a"];
+44[label="div"] -> 47[label="p"];
+}

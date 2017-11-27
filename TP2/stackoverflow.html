@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz?rq=1 -->
+<html itemscope="" itemtype="http://schema.org/QAPage"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>How to annotate nodes and edges with Graphviz? - Stack Overflow</title>
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+    <link rel="apple-touch-icon image_src" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a)">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="http://stackoverflow.com/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:domain" content="stackoverflow.com">
+    <meta property="og:type" content="website">
+
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="How to annotate nodes and edges with Graphviz?">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="How can I draw a graph with Graphviz and annotate its nodes and edges?
+
+For example:
+
+(a: level=0) --3--&amp;gt; (b: level=1)  
+(a: level=0) --2--&amp;gt; (c: level=1)">
+    <meta property="og:url" content="http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz">
+    <link rel="canonical" href="http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz">
+
+    
+    
+    <script async="" src="http://edge.quantserve.com/quant.js"></script><script async="" src="http://b.scorecardresearch.com/beacon.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="http://static.adzerk.net/ados.js"></script><script src="./stackoverflow_files/jquery.min.js"></script>
+    <script src="./stackoverflow_files/stub.en.js"></script>
+    <link rel="stylesheet" type="text/css" href="./stackoverflow_files/all.css">
+
+            <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;How to annotate nodes and edges with Graphviz?&#39;" href="http://stackoverflow.com/feeds/question/11337048">
+            <meta name="twitter:app:country" content="US">
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:iphone" content="871299723">
+            <meta name="twitter:app:url:iphone" content="se-zaphod://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz">
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:ipad" content="871299723">
+            <meta name="twitter:app:url:ipad" content="se-zaphod://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz">
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+        
+            StackExchange.ready(function () {
+                                    
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.initSnippetRenderer();
+                    });
+                    
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:0,shownCommentCount:0,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:11337048});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('1', '11337048');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text', true); });
+
+            });
+        </script>
+
+            <script>
+                StackExchange.ready(function () {
+                    try {
+                        if (!document.createElementNS('http://www.w3.org/2000/svg', "svg").createSVGTransform)
+                            return;
+                    } catch (ex) {
+                        return;
+                    }
+                    var d = 100;
+                    $.ajax({url:"//cdn-prom.sstatic.net/WinterBash/js/qa-wb.js?v=9",cache:true,dataType:"script"}).done(function tryInit() {
+                        if (window.WinterBash) {
+                            WinterBash.core.init('winterbash2016.stackexchange.com', '//cdn-prom.sstatic.net/WinterBash/', '8');
+                        } else {
+                            if (d <= 800)
+                                setTimeout(tryInit, d);
+                            d *= 2;
+                        }
+                    });
+                });
+            </script>
+
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","serverTime":1483900152,"routeName":"Questions/Show","site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":1,"enableInsertDocLinkDialog":true,"enableSocialMediaInSharePopup":true},"user":{"fkey":"1998a03de64119bcb7a49612d08c2203","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true,"ab":{"question_show_tweaks":{"v":"altern_unansw_cta","g":1},"question_page_hero":{"v":"delay_hero_3","g":2},"mobile_signup_link":{"v":"simplified_signup_form:rdn","g":1}}},"events":{"postType":{"question":1},"postEditionSection":{"title":1,"body":2,"tags":3}},"story":{"minCompleteBodyLength":75}}, {"site":{"allowImageUploads":true,"enableUserHovercards":true,"styleCode":true,"enableNewLinkInsertDialog":true,"enableNewHeaderDesign":true,"enableImgurHttps":true},"comments":{},"tags":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true},"flags":{"allowRetractingFlags":true},"analytics":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000},"snippets":{"snippetsEnabled":true,"renderDomain":"stacksnippets.net"},"markdown":{"asteriskIntraWordEmphasis":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"a6c44b1fbbe5","js/moderator.en.js":"cbd9a328c047","js/full-anon.en.js":"fff5b3628ccc","js/full.en.js":"53cad7e6923d","js/wmd.en.js":"6802ff529d8f","js/third-party/jquery.autocomplete.min.js":"d3b8fa7fdf74","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"8c3bd5e12250","js/help.en.js":"af6d61ae5ea0","js/tageditor.en.js":"51d04565688f","js/tageditornew.en.js":"8ed9d778d3fd","js/inline-tag-editing.en.js":"2ddfa79492e7","js/revisions.en.js":"834877a0c912","js/review.en.js":"513a3fcfed2e","js/tagsuggestions.en.js":"bb4721d888d2","js/post-validation.en.js":"d606c5dadfeb","js/explore-qlist.en.js":"e71f14781288","js/events.en.js":"6f925c50a0c3","js/keyboard-shortcuts.en.js":"51892ca34d92","js/external-editor.en.js":"235e80f649d7","js/external-editor.en.js":"235e80f649d7","js/snippet-javascript.en.js":"c681521379d1","js/snippet-javascript-codemirror.en.js":"a3c34a58ab98"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+<style type="text/css">
+:root div[id^="adzerk"],
+:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle,
+:root #header + #content > #left > #rlblock_left
+{ display: none !important; }</style><style type="text/css">iframe[src="https://ssum-sec.casalemedia.com/usermatch?s=183712&cb=https%3A%2F%2Fengine.adzerk.net%2Fudb%2F22%2Fsync%2Fi.gif%3FpartnerId%3D1%26userId%3D"],
+img[src="//clc.stackoverflow.com/timeout.gif"]
+{display:none !important;}</style><script async="" src="./stackoverflow_files/full-anon.en.js"></script><style type="text/css">
+:root *[pnywj6s][hidden] { display: none !important; }</style><script async="" src="./stackoverflow_files/snippet-javascript.en.js"></script><script async="" src="./stackoverflow_files/post-validation.en.js"></script><script async="" src="./stackoverflow_files/external-editor.en.js"></script><link rel="stylesheet" type="text/css" href="./stackoverflow_files/wb-include.css"></head>
+<body class="question-page new-topbar">
+    <noscript>&lt;div id="noscript-padding"&gt;&lt;/div&gt;</noscript>
+            <script>(function () { var old = $.fn.contents; $.fn.contents = function () { try { return old.apply(this, arguments); } catch (e) { return $([]); } } })()</script>
+        <iframe id="adzerk-user-match" width="0" height="0" frameborder="0" scrolling="no" onload="window.AUMIframeDone=true" src="./stackoverflow_files/usermatch.html" style="display: none !important;" marginheight="0" marginwidth="0" hidden=""></iframe>
+
+
+
+
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+
+    <div class="topbar-dialog siteSwitcher-dialog dno">
+        <div class="header">
+            <h3><a href="http://stackoverflow.com/">current community</a>
+            </h3>
+        </div>
+        <div class="modal-content current-site-container">
+            <ul class="current-site">
+                    <li>
+                            <div class="related-links">
+                    <a href="http://chat.stackoverflow.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+            </div>
+
+
+
+
+    <a href="http://stackoverflow.com/" class="current-site-link site-link js-gps-track" data-id="1" data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                    </li>
+                    <li class="related-site">
+                            <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                        
+
+
+
+    <a href="http://meta.stackoverflow.com/" class="site-link js-gps-track" data-id="552" data-gps-track="
+            site.switch({ target_site:552, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                    </li>
+            </ul>
+        </div>
+
+        <div class="header" id="your-communities-header">
+            <h3>
+your communities            </h3>
+
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <div class="call-to-login">
+<a href="https://stackoverflow.com/users/signup?ssrc=site_switcher&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;amp;utm_source=stackoverflow.com&amp;amp;utm_medium=dev-story&amp;amp;utm_campaign=signup-redirect" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:10 })">Sign up</a> or <a href="https://stackoverflow.com/users/login?ssrc=site_switcher&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f11337048%2fhow-to-annotate-nodes-and-edges-with-graphviz%3frq%3d1" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:11 })">log in</a> to customize your list.
+                </div>
+        </div>
+
+        <div class="header">
+            <h3><a href="http://stackexchange.com/sites">more stack exchange communities</a>
+            </h3>
+            <a href="http://stackoverflow.blog/" class="fr">company blog</a>
+        </div>
+        <div class="modal-content">
+                <div class="child-content"></div>
+        </div>        
+    </div>
+        </div>
+
+        <div class="network-items">
+                <a href="http://stackexchange.com/" class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 163 Stack Exchange sites">
+                    <span class="hidden-text">Stack Exchange</span>
+                </a>
+
+    <a href="http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz?rq=1#" class="topbar-icon icon-inbox yes-hover js-inbox-button" title="Recent inbox messages">
+        <span class="hidden-text">Inbox</span>
+        <span class="unread-count" style="display:none"></span>
+    </a>
+    <a href="http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz?rq=1#" class="topbar-icon icon-achievements yes-hover js-achievements-button" data-unread-class="" title="Recent achievements: reputation, badges, and privileges earned">
+        <span class="hidden-text">Reputation and Badges</span>
+        <span class="unread-count" style="display:none">
+            
+        </span>
+    </a>
+        </div>
+
+        <div class="topbar-links">
+
+                <div class="links-container">
+                <span class="topbar-menu-links">
+                                    <a href="https://stackoverflow.com/users/signup?ssrc=head&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;utm_source=stackoverflow.com&amp;utm_medium=dev-story&amp;utm_campaign=signup-redirect" class="login-link" rel="nofollow">sign up</a>
+                                <a href="https://stackoverflow.com/users/login?ssrc=head&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f11337048%2fhow-to-annotate-nodes-and-edges-with-graphviz%3frq%3d1" class="login-link" rel="nofollow">log in</a>
+
+                            <a href="http://stackoverflow.com/tour">tour</a>
+        <a href="http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz?rq=1#" class="icon-help js-help-button" title="Help Center and other resources">
+            help
+            <span class="triangle"></span>
+        </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="http://stackoverflow.com/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="http://stackoverflow.com/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                        <li>
+                            <a href="http://meta.stackoverflow.com/" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                                Meta
+                                <span class="item-summary">
+                                    Discuss the workings and policies of this site
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://stackoverflow.com/company/about" class="js-gps-track" data-gps-track="help_popup.click({ item_type:6 })">
+                                About Us
+                                <span class="item-summary">
+                                    Learn more about Stack Overflow the company
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.stackoverflowbusiness.com/?ref=topbar_help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:7 })">
+                                Business
+                                <span class="item-summary">
+                                    Learn more about hiring developers or posting ads with us
+                                </span>
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+                                            </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="http://stackoverflow.com/search" method="get" autocomplete="off">
+                        <input name="q" type="text" placeholder="Search Q&amp;A" value="" tabindex="1" autocomplete="off" maxlength="240">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://stackoverflow.com/">
+                    Stack Overflow
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                            <li class="youarehere">
+        <a id="nav-questions" href="http://stackoverflow.com/questions" class="js-gps-track" data-gps-track="top_nav.click({is_current:true, location:3, destination:1})">
+        Questions
+        </a>
+    </li>
+
+    <li>
+        <a id="nav-jobs" href="http://stackoverflow.com/jobs?med=site-ui&amp;ref=jobs-tab" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:6})">
+        Jobs
+        </a>
+    </li>
+                            <li>
+        <a id="nav-docs" href="http://stackoverflow.com/documentation" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:7})">
+        Documentation
+        </a>
+    </li>
+                            <li>
+        <a id="nav-tags" href="http://stackoverflow.com/tags" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:2})">
+        Tags
+        </a>
+    </li>
+
+                            <li>
+        <a id="nav-users" href="http://stackoverflow.com/users" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:3})">
+        Users
+        </a>
+    </li>
+
+                            <li>
+        <a id="nav-badges" href="http://stackoverflow.com/help/badges" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:4})">
+        Badges
+        </a>
+    </li>
+
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion" href="http://stackoverflow.com/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content" class="snippet-hidden">
+            
+
+<div itemscope="" itemtype="http://schema.org/Question">
+    <link itemprop="image" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+			<div id="question-header">
+                <h1 itemprop="name"><a href="http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz" class="question-hyperlink">How to annotate nodes and edges with Graphviz?</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="11337048" id="question">
+
+    <script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk178379585",4).setZone(43); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk178379585" pnywj6s="" hidden=""></div>    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="11337048">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">3</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz?rq=1#">favorite</a>
+        <div class="favoritecount"><b>1</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>How can I draw a graph with Graphviz and annotate its nodes and edges?</p>
+
+<p>For example:</p>
+
+<pre><code>(a: level=0) --3--&gt; (b: level=1)  
+(a: level=0) --2--&gt; (c: level=1)
+</code></pre>
+    </div>
+    <div class="post-taglist">
+        <a href="http://stackoverflow.com/questions/tagged/graphviz" class="post-tag js-gps-track" title="show questions tagged &#39;graphviz&#39;" rel="tag">graphviz</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/q/11337048" title="short permalink to this question" class="short-link" id="link-post-11337048">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/11337048/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time" style="margin-left: 0px !important;">
+        <a href="http://stackoverflow.com/posts/11337048/revisions" title="show all edits to this post">edited <span title="2014-11-22 20:51:19Z" class="relativetime">Nov 22 '14 at 20:51</span></a>
+    </div>
+    <div class="user-gravatar32 wb-hat-checked">
+        <a href="http://stackoverflow.com/users/1309352/bleeding-fingers" style="display: inline;"><div class="hat" style="float: left; display: block; width: 0px; height: 0px; overflow: visible; position: relative; left: 0px; top: -2px;" data-hatid="2044009"><img src="data:image/svg+xml,%3Csvg%20viewBox%3D%2226.413711410474292%2018.403332792302493%20141.129752341199%20165.39860490373616%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2233%22%20height%3D%2238%22%3E%3Cg%20transform%3D%22rotate(146%2096%2096)%20translate(35.85855923830082%2022.183707278564114)%20scale(1.1163144456927923)%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3Anone%3B%7D.cls-2%7Bisolation%3Aisolate%3B%7D.cls-11%2C.cls-3%7Bfill%3A%23fbda7d%3B%7D.cls-12%2C.cls-20%2C.cls-4%7Bfill%3A%23ff6b00%3B%7D.cls-12%2C.cls-13%2C.cls-4%2C.cls-5%7Bopacity%3A0.3%3B%7D.cls-10%2C.cls-12%2C.cls-13%2C.cls-14%2C.cls-17%2C.cls-20%2C.cls-4%2C.cls-5%2C.cls-7%2C.cls-8%2C.cls-9%7Bmix-blend-mode%3Amultiply%3B%7D.cls-5%7Bfill%3Aurl(%23b)%3B%7D.cls-6%7Bclip-path%3Aurl(%23m)%3B%7D.cls-10%2C.cls-7%2C.cls-8%2C.cls-9%7Bopacity%3A0.56%3B%7D.cls-7%7Bfill%3Aurl(%23a)%3B%7D.cls-8%7Bfill%3Aurl(%23f)%3B%7D.cls-9%7Bfill%3Aurl(%23e)%3B%7D.cls-10%7Bfill%3Aurl(%23d)%3B%7D.cls-11%7Bstroke%3A%23fff%3Bstroke-width%3A0.79px%3B%7D.cls-11%2C.cls-12%7Bstroke-miterlimit%3A10%3B%7D.cls-12%7Bstroke%3A%23fbda7d%3Bstroke-width%3A1.11px%3B%7D.cls-13%7Bfill%3Aurl(%23c)%3B%7D.cls-14%7Bopacity%3A0.34%3B%7D.cls-15%7Bmask%3Aurl(%23h)%3B%7D.cls-16%7Bfill%3Aurl(%23l)%3B%7D.cls-17%7Bopacity%3A0.38%3B%7D.cls-18%7Bmask%3Aurl(%23g)%3B%7D.cls-19%7Bfill%3Aurl(%23k)%3B%7D.cls-20%7Bopacity%3A0.33%3B%7D.cls-21%7Bfilter%3Aurl(%23i)%3B%7D.cls-22%7Bfilter%3Aurl(%23j)%3B%7D%3C%2Fstyle%3E%3CradialGradient%20id%3D%22b%22%20cx%3D%2261.41%22%20cy%3D%2271.03%22%20r%3D%2254.19%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23fff%22%20offset%3D%22.45%22%3E%3C%2Fstop%3E%3Cstop%20stop-color%3D%22%23fff9f5%22%20offset%3D%22.49%22%3E%3C%2Fstop%3E%3Cstop%20stop-color%3D%22%23ffeadc%22%20offset%3D%22.57%22%3E%3C%2Fstop%3E%3Cstop%20stop-color%3D%22%23ffd2b1%22%20offset%3D%22.67%22%3E%3C%2Fstop%3E%3Cstop%20stop-color%3D%22%23ffb077%22%20offset%3D%22.79%22%3E%3C%2Fstop%3E%3Cstop%20stop-color%3D%22%23ff852d%22%20offset%3D%22.92%22%3E%3C%2Fstop%3E%3Cstop%20stop-color%3D%22%23ff6b00%22%20offset%3D%221%22%3E%3C%2Fstop%3E%3C%2FradialGradient%3E%3CclipPath%20id%3D%22m%22%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M40.95%2C10.54a60.69%2C60.69%2C0%2C0%2C0-26.26%2C8.77A60.94%2C60.94%2C0%2C0%2C1%2C53.63%2C70.56a60.94%2C60.94%2C0%2C0%2C1-28.72%2C57.6%2C60.95%2C60.95%2C0%2C1%2C0%2C16-117.62ZM57.26%2C62.75c11.31-11%2C23.15-7.81%2C27.88-6.11a21.47%2C21.47%2C0%2C0%2C1-13%2C10.61A14.09%2C14.09%2C0%2C0%2C1%2C57.26%2C62.75Z%22%3E%3C%2Fpath%3E%3C%2FclipPath%3E%3CradialGradient%20id%3D%22a%22%20cx%3D%2277.75%22%20cy%3D%22-827.5%22%20r%3D%228.47%22%20gradientTransform%3D%22translate(-35.44%20866.4)%22%20gradientUnits%3D%22userSpaceOnUse%22%3E%3Cstop%20stop-color%3D%22%23fff%22%20offset%3D%22.45%22%3E%3C%2Fstop%3E%3Cstop%20stop-color%3D%22%23fefaf5%22%20offset%3D%22.5%22%3E%3C%2Fstop%3E%3Cstop%20stop-color%3D%22%23fbecdc%22%20offset%3D%22.59%22%3E%3C%2Fstop%3E%3Cstop%20stop-color%3D%22%23f6d6b1%22%20offset%3D%22.7%22%3E%3C%2Fstop%3E%3Cstop%20stop-color%3D%22%23efb677%22%20offset%3D%22.83%22%3E%3C%2Fstop%3E%3Cstop%20stop-color%3D%22%23e78f2d%22%20offset%3D%22.98%22%3E%3C%2Fstop%3E%3Cstop%20stop-color%3D%22%23e68a24%22%20offset%3D%221%22%3E%3C%2Fstop%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22f%22%20cx%3D%2260.89%22%20cy%3D%22-97.57%22%20r%3D%2214.23%22%20gradientTransform%3D%22translate(34.28%20185)%22%20xlink%3Ahref%3D%22%23a%22%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22e%22%20cx%3D%2242.16%22%20cy%3D%22-84.55%22%20r%3D%228.47%22%20gradientTransform%3D%22translate(35.59%20186.7)%22%20xlink%3Ahref%3D%22%23a%22%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22d%22%20cx%3D%2223.28%22%20cy%3D%22-614.8%22%20r%3D%228.47%22%20gradientTransform%3D%22translate(24.95%20744.8)%22%20xlink%3Ahref%3D%22%23a%22%3E%3C%2FradialGradient%3E%3CradialGradient%20id%3D%22c%22%20cx%3D%225.33%22%20cy%3D%2233.67%22%20r%3D%225.2%22%20xlink%3Ahref%3D%22%23b%22%3E%3C%2FradialGradient%3E%3Cfilter%20id%3D%22j%22%20x%3D%2248.54%22%20y%3D%2249.64%22%20width%3D%2230.48%22%20height%3D%2214.64%22%20color-interpolation-filters%3D%22sRGB%22%20filterUnits%3D%22userSpaceOnUse%22%3E%3CfeFlood%20flood-color%3D%22%23fff%22%20result%3D%22bg%22%3E%3C%2FfeFlood%3E%3CfeBlend%20in%3D%22SourceGraphic%22%20in2%3D%22bg%22%3E%3C%2FfeBlend%3E%3C%2Ffilter%3E%3Cmask%20id%3D%22h%22%20x%3D%2248.54%22%20y%3D%2249.64%22%20width%3D%2230.48%22%20height%3D%2214.64%22%20maskUnits%3D%22userSpaceOnUse%22%3E%3Cg%20class%3D%22cls-22%22%3E%3Cimage%20transform%3D%22translate(48.54%2049.64)%20scale(.24)%22%20width%3D%22127%22%20height%3D%2261%22%20xlink%3Ahref%3D%22data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAIEAAAA%2FCAIAAABIAjwCAAAACXBIWXMAAC4jAAAuIwF4pT92AAAL5ElEQVR4Xu2b95dUWRWFq2hbW2RGkQW2IsiADC5a4khmjWQl4yKJRAkLJShBQBcoiozzZ%2BPn%2FeYdb%2BXQ1Ty65u2foKvq1b17n73PeaFq7969q1UoD%2F%2Fjv9KgXFQalI9Kg%2FJRaVA%2BKg3KR6VB%2Bag0KB%2BVBuXjPWlQr9cXLFgwMTHxjVljohcWdEU9Q69VvyfMlQY56ZOTk1NTUwsXLly0aNFHCR8nfLczPm7ERwUWFfhOgYUFvl1gqhHfKvDNhMkEtWxVpRSFRqlBznuQDoOLFy9esmTJsmXLpqenf5SwfPnyH%2FfC8gJ%2B5IcFphN%2BkLAsYWkCX%2FH9hMUJ30sIRUNClVMqhZks0GS1tvL04mAYjEADqWfp7Ie9sU%2B2DRewA2WQuGLFilWrVq1evXrNmjVr1679NGFdws9asK7ApwX4yE8T1iRwnE8SOOZPElauXLkiQeVCs1yqXCcVUhhV0Ua5dXJV8oibCz1mpYHsGzXsBOrZJHuGCHiBJoiDRJidmZnZsGHDpk2bNm%2FevGXLlq1bt36W8ItGfFZga8KWBD6yKWHjxo0c5OcJHHD9%2BvVq1qSTIqmQ8oQ2IYyqsFr1CK%2B0SpJ7pZMevXjqgeE14LvNHNbNTtgVm5R6GIEdmII4SITTbdu27dixY9euXbt3796zZ8%2FevXs%2FT%2FhlIz4vwBv2JPD%2BXQk7d%2B7kCNu3b%2BdQqqVIKoQ8nYRBlbaS5Hrk%2Fsj1GFSM4fQYRgPLnwVRMiyaPbAldshu2bzUQxBkQRwkwum%2BffsOHDhw8ODBw4cPHzly5FcJv24HX%2BI9hxMOHTrEp%2Fjs%2Fv37OYg6hTYcP1clJNEuSJLrkVskxAhzhDMUo5MzmpQYiTMG1iDKn%2FWxYjbAfmSfnUMBdEANNMEX3EEinB49evTYsWMnTpw4efLkqVOnTp8%2BfebMmd%2B04EwCr%2FKekwl85Pjx43xcedAmVFESHZProUVyMcIcOkMlwhYRU5FRrZ5oCqh%2BZOhficE0UACWwuIsfzZDlbHPYB9SqFmpl3c4hd9z586dP3%2F%2BwoULv024dOnS7xpxKcFXL168yDt5P586e%2FaswigJx0SS0EOL5GIQWTojV8KY0hN5QOUytI2mJje0zaVOo1QvOr%2FCABo0CYCRKSjqiyym9Ng5FMg%2BNUvxUstQD48QCrmXL1%2B%2BevXqtWvXrl%2B%2FfuPGjd%2B3A3%2Fn1WsJV65c4SNqoyTooVc4smJoDiILZ4QSxJSeUAYCKmQIN5hLPTVoSqS8N5Tgg3oRQQrAutkGW2J7bJXqY%2F8QASOwT81SvLAGfVAJoZB78%2BbNW7du3blz5%2B7du39I%2BGMj%2BMvdBN5z%2B%2FZt3q8qoYdiIKrOyJXQE51kyEMpNAgf5C06z6JOzXm0QVTrUwOOyNfw9ayJJYYD2BuuZ8NEMxQQEcQFpRrsU9RQCaEwC8v37t178ODBw4cP%2F5Tw5wz%2BhZd4w%2F3793mnkvBZlEMMDoWNVCI8gdghQ7jBpt2qgT4wi8IEIUDuADtB%2F%2BU%2FHPWBvjTwJIDVsEQ8SwVRTUQQO1QA9g8RFCYVSqnCFMUr%2B1AJofL%2B6NGjx48fP3ny5OnTp39pxNMEXuINvE09EAPlVIKj6YkwBDLoBpt2WCHXwGHJybWtAEZQlH%2FOfqdZaJZV34reGtSzFGK5LB0vsyXqi33ifR0AF5BCO6X8IYvihTvZp8xhFoqfPXv2%2FPnzFy9e%2FDXhbwX8L3%2FnVd6jGCqBLfQEAaUMuoEvIpTCCmqADygINKAy6E9hAlNIAZyIyNJW9mMEaqI%2Bqn601Af60oB1UBeYANtSROyHeYMqI3nZNjlABOGAEMDyp4ohMdiHYuh%2B%2BfLlq1ev%2Fp7wjwT%2FzR95ST1CCT6LfsqgGwglrcB3kUhooA%2FMImYkakITEJIhAA6wB1D%2BdmDCx%2BQx95uo75I2XYgaGr01YAUsixohMTUB2YrH6cMUHdUHBWQCjEANqY0DEADioI9yJmdkX%2Bpfv379z4R%2FZeC%2F%2FF09VIKPKINuQM6wQmigD5CfGGQW0ASURS4APYDYtPxZfM6%2BhW%2Fm5NSPJOIHQg8N6sU8yopZPXXElmzF7Ja6owBNITKalIAjClYHIIDlD63BPoy%2FefPm3wlv3771H%2FwllFAG3YB%2BWMFEojGEDxhY6Qc4jyDSBHaCEMAeYP5gXMKH6Jd9YsfCl%2FpIm5z6TmzMEXprwBJZLksnQCOISFtil51Tg7kJoAmy6AHUbzhAAYJ9qP%2BiEYrBq8iAG3CMVggN9AEOI%2BiIO%2FTGBHyvnYAUCgHoASwPp5I%2FlL%2FhE%2BxT%2BGaOVf8ecqYf9KWBExFGJlJxN1VmN2bzlCGBQFVCDUVKXJDdYQLKGUKhFXKhWPb%2Fk%2FBlgv9WBt2gFXINUJRjRhBhAjsBKZQLQFmQkOaP5U%2F4UDewT%2BjDvoVv1ZdV8m0xjAZORDYDKhE6SOc8iOgERDlhkpuASleALxvRqoE%2B4OMcxJ6sCfAZbjOFQgCWQRNmQGBV5I%2FlT%2FiwWhoY7BM7Fr6B8%2BFQH%2BhXA4w8tAaaoB8NzCL6QW4CO4EpxBeFACQhXmQMpQGQP5Y%2FvZfoZ%2BhkwbKfZ06nbZaL3hrYkymo6AdkEcZvm0XdfQDReRDlAvAq77EZkGDkGGlGpplCHBmNcwGYgmhIlAL5Y%2FlTH4QP0Y9lSZ5g%2F4OlPtDXbEqMMhdRXDEXeXJgT2Y4sSd7ZtClH2iFaAnRkDulEHIiKvbKBWAKQgAbANXA%2BM%2B4zMKwKdHPzEPuM%2B3MC%2FZFbw3YCVvC1%2Bwwzg%2B8SuFsCi%2FOpjTMODlgLmq1QsxFgRiH%2BhSA8wC%2BlAZg%2FmBKyp%2FJx%2BgnM8n9ecS%2B6EsD4sjxNM6TO41GWCFGI9I8H091gydlbxLyszMjqIsANB4EYARCeyqA%2FCH9KX8SkvDhVMuuO7%2FYF701qBVxhM0pN0YONg8FVCL12HSa5qW6%2FDSt6TwZul8X8MQ4zgbsAZ0EoP8zBXByzkRA%2FjD8YErWw6pY2zxlX%2FSlgVaI6SjvzHGmRlfgvInh3UQKGbxe5KU6rxflkH3L39OxaMK4Cm%2FhMHyG2%2FAczuNL%2BWoWwDIsf3KSEum%2B%2Fg8cfWlQG%2BSqETJ41Sium9IbvF7tdVP18B9N1%2BbyMRQBOKACoDR60wCYf8gfhh9mhPle%2FoF%2BNciH1LhwFLcQiOkmGXCDp83QiiG8gh33D0TcKogro56IeSaMsbAXJmMEYgyzAZCEFAGlQEHM9%2FIP9KtBreUiNmdDcSvNO8khA6HkfTRvJKCEd3IQw%2FtowltmcZfGewN8kNZCg%2FEkwBEIz%2BE85p%2BlS5eOR%2F7kGECDWpFIzKlwYWNouqPZdEONioZW72jGzeSA9429EpdfDfUkgG7vCIQAdGDOftGe8Ww88ifHYBrU043lVhkMJe%2Fs%2B1yFj7RQ0T5UgScU40aCN%2Bulnr%2FDPvMPb%2FZadIxA9BtGIM4A%2BCLGAZKQb%2B%2B1xvmHwTSoFTKQBoaSt5dJaqqVqZHO6fNFGIIwUQlK2ydcmh4r8mkib9B7Ido7AY5AHG1mZgaN%2BQqaEB14nPInx8AaiOgNlCctmlZJXECZT3pRwkwyKuGzRsRLPFt3tkD%2BsJA3hL0KTQf2HPjrIEBtaA1q2e0dxkRmFR948XlTpng6BEpAKKniY6Y%2BYHos4XhCPDHnrWBk4yOeA3OcfAYdYwFqs9Gglj1ywbDY6dlT0onWihgkDGXuk78inuTlVdin%2FL0G5ww6PT3tOfB4C1CbpQa1rD1gCCijUfsEvEqQThR1%2Fvg7Qe8T8PHgtI%2BHegcmvwY3ZicBXTBbDUQo4dPwKIEnoPKT9DMQxIBcChyW42cg%2Be87MA1v4AyA9zMC8fGvjwC1UWkgYnLFE6YT5YwtWn8LtS5DPP3pzXea%2FPidhXXHKDUQ4Ql%2Fm4Yt%2FG0a%2BR4%2FT1uZwYeueJXy583oR6sfs7Ow7hi9BqKe%2FVBwKvuNppJgkaYf6dFLeMPYXIYbCHOlQaBe%2FGB2Iv1mVkmwSPGz4v8%2FVztfbv%2BOHHOuQRNySQL5s7S9DjCGeN8aVGhFpUH5qDQoH5UG5aPSoHxUGpSPSoPyUWlQPioNysdXGlQoF5UG5eO%2FVBwtnv48yW4AAAAASUVORK5CYII%3D%22%3E%3C%2Fimage%3E%3C%2Fg%3E%3C%2Fmask%3E%3ClinearGradient%20id%3D%22l%22%20x1%3D%222781%22%20x2%3D%222787%22%20y1%3D%22-515.4%22%20y2%3D%22-504.9%22%20gradientTransform%3D%22matrix(-.92%20.39%20.39%20.92%202829%20-576.6)%22%20xlink%3Ahref%3D%22%23b%22%3E%3C%2FlinearGradient%3E%3Cfilter%20id%3D%22i%22%20x%3D%2273.74%22%20y%3D%2248.92%22%20width%3D%2225.44%22%20height%3D%2254.72%22%20color-interpolation-filters%3D%22sRGB%22%20filterUnits%3D%22userSpaceOnUse%22%3E%3CfeFlood%20flood-color%3D%22%23fff%22%20result%3D%22bg%22%3E%3C%2FfeFlood%3E%3CfeBlend%20in%3D%22SourceGraphic%22%20in2%3D%22bg%22%3E%3C%2FfeBlend%3E%3C%2Ffilter%3E%3Cmask%20id%3D%22g%22%20x%3D%2273.74%22%20y%3D%2248.92%22%20width%3D%2225.44%22%20height%3D%2254.72%22%20maskUnits%3D%22userSpaceOnUse%22%3E%3Cg%20class%3D%22cls-21%22%3E%3Cimage%20transform%3D%22translate(73.74%2048.92)%20scale(.24)%22%20width%3D%22106%22%20height%3D%22228%22%20xlink%3Ahref%3D%22data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAGwAAADmCAIAAAC%2FL%2FckAAAACXBIWXMAAC4jAAAuIwF4pT92AAAgAElEQVR4Xu3de7Bcdbnm8QaHoEmGEKgEouESSZCKiQZMSAQKAoGAAhHrBEIiAkYoiUgYAwgpgTARDaBQGfGC3AYs9OBlFBzEckQd1FHUEge8j3ooHfV4PXr0lJdxxszn9DP9m5Xeye7uvRvo3rvfP3at7t27d6%2Fvet7nfd%2FV61Lbtm1bbRCjiH8FOIA4yhhA7EIMIHYhBhC7EAOIXYgBxC7EAGIXYgCxCzF2IO6yyy677rrrM%2Brxb3YSfuU1XtnqzTqLvocYdgBNmDDhmc985sSJEydPnvxv67HH9uEZv%2FICL9ttt926yLSPIVp5FOAABZ0999xz7733nj59%2Br777jtjxoxnP%2FvZz9k%2BPONXXuBlXoxpAep9RoOyXyFa5%2BDDYq%2B99tpnn31g2n%2F%2F%2FWfNmnXQQQfNnj374Ho8rxGW58yZ41decMABB8ycORPoadOmTZ061Tt4H8IcMce%2BhBiCkyZNgoC49ttvP2gwOuSQQ%2BbNm%2FeCF7xgwYIFh9XjRY2wfOihh77whS%2BcP3%2F%2B85%2F%2FfFgBRRN6G4AwqdJ7joxj%2F0G0nuyPfOgIAvioDDvgwDr88MNf%2FOIXH3HEEUcdddTR9TjmmGOycOSRR3p%2B8eLFixYtwhTruXPn0iyUMl2O2yoj49hnEAtB1kaAEJAVfLhgh9Sxxx67bNmyE0444cQTTzzppJNe0gjLnvH8cccdt3TpUkDRBB1K%2Bn3uc59re4yYYz9BrBJkf%2FJXbgIBH7lhB9NLX%2FrSU0899WUve9nLX%2F7yv6vHypUr%2FfTwtNNOW7FixSmnnIIpmnBTK5TS3JaQ3Tiy12c961nqTKvPsl30DcT4oCocglKYwREgEMQFHzowQbZq1arVq1e%2F4hWvOOuss17ZCMtr1qw588wzzzjjDEzRhBtKqrQNZDeO9Civ%2BePuu%2B%2FekRj7BiJ18H4ZJ4tDkP3JXyBOPvlk%2BE4%2F%2FXTs8Dr33HPXrl173nnnnX%2F%2B%2Ba9phOVXv%2FrVr3rVq8455xx80YSSZqW5bcArcWSRHFadsakU61af6P9Hf0CkC%2BqgERnHBxkZglJ4%2BfLlQFAffGeffTZ2YK1bt%2B51r3vd%2BvXrL7744n9XDwseXnTRRRdeeOEFF1yAL9BQUqXEl9040qO8VrXJ3KbS9LQvxv6ASBfUoZuRcQqxLKbBECRAOEiM3DACa8OGDZdeeukb3vCGyy%2B%2F%2FIpGWL7ssssuueQSTNEEmjBxJ0kqxpFFLlmyhMBtJC0k521fjH0AkSLoguXTiEqqkvBBWYwgKTE7OECBDyPs3vjGN1511VWbNm265ppr%2Fn0jLF999dVXXnkloBBDiTjZyu5wlNekbfMwR01PR2LsA4jcMDJUQClF3inEyggNckAE4QAl%2BLDbvHnzm9%2F85i1btlx33XXX18OCh295y1ve9KY3oQkxYRIsSdIvjmqRUmPDaH0ktbofMbZZpvsAoqLMDdUTxr9w4UL1VPYpC7I4BOGgL0KDDynU3va2t910003%2FoRJbt2698cYb3%2FrWt6J57bXXYr1x40aSxJEe5bVNokAxR24bMdK%2Bf93q0%2F1r9DrE5LK2hhuSoTJKL6qBSqKMFIKgUB98SEH2jne8413vetctlXj3u9%2F9zne%2B8%2B1vfzu4UGItxyk3HJUam0QvqVXiFcTIGWlfz9hORvc6RAklrRRldTMypBdWKAf54Otf%2F3oEZSgo0MCHFGS33XbbHXfc8R8rceedd95%2B%2B%2B3vec97wIUSa5IMR05qYyhNzJHPRoxUP3PmzD322KOdjO51iEqkXJZcijI3JENFgGrkoErC2mgQQfl78803kxt8kL33ve993%2Fve9%2F73v%2F%2Fv62HBQ0%2FeddddUKJMqjjyShxtBpaq9eGwXIIYOaMuSs%2FYZkb3OkTroFDKZSmmrTFmkCHV0I5M5IOyOASpjNyQguwDH%2FjAhz70of9UCQ8%2F%2BMEPAnrPPfegfOutt4YjPdoMipKk5g%2FEqGRpd%2FQAyovGm5m0%2Bow9D1GPbU2MKJoPRZkbkqGSKpFlomori0MQGoDg%2B%2FCHP%2FzRj370%2Fvvv%2F8%2BV8PC%2B%2B%2B5D0wuokiTD0QawGbQ%2BvDVi5Iz0bqaW0WxEY7DrrrsO%2FyF7HSIhmGeVS7ks0Qwnhg0DCe2wQvnIB6UngtDQGnwf%2B9jHPv7xj3%2FiE5%2F4L5Xw0JNoegFVUiuO0PPHG264QVJzhohRu0Pvyos6xkaYScuuu6chkgBr12NbH7mspCjK3JCF0Q4FKbV8UBYjCA2tPfDAA5%2F85Ccfeuihz3zmM5%2F97Gf%2Faz0seOhJv4LSy8IRen%2Bu%2B%2BGqmkdipHFK1zMmo3WmzKSlLfY0RBJg7QzR%2BiiaSop0e%2B1rX2uAox0Kko8KhSymQWgA%2BtSnPoXXww8%2F%2FPnPf%2F6%2FVcJDT%2FqVFzz44IOyG0d%2F6M8VdJ6gx6RuGlf3lRcZrUazEWYyYcKE4T9nT0MkAR2iNbE%2BJmX9sJJy8cUXc0MypCD5ePfdd7M5SRqCdIfXF7%2F4xUceeeQrlfDQk37lBV4WPfpDf%2B5NIkbqpnENvIzWz%2BtJ2QgzaVlbehqiqqLjZfDWh0%2FJZemmrVNPyZCCJLKC%2B5GPfEQWhyDR4fXVr3710Ucf%2Fe%2BV8NCTfvWFL3whHP2JP5TUOkqK9oZMVsVXXtasWaNGMxCNjm5Ryz385%2BxpiKkq8%2BfPtz7aYLmss1EBzG3ckII0NLJSuVA6QpDo8Hrssce%2B8Y1vfPOb3%2FxWPSx46Em%2F%2BvKXv4wjl%2BSPShAfIEalyRuq9d7cvzAFagPYor7qwAMP5MvDF%2Bheh0gIqor10Xmoy3JZBVCUaYcM7733Xlmp8oISgl%2F%2F%2Btfx%2Bva3v%2F3d7373e9%2F73v%2Boh4XvfOc7aD7%2B%2BOOFI39kjhEjZ1Sm9YwyWg%2FPNNji8ccfn9oyderU4Qt0T0OUR5qMww47jM3rsU24cllJ0dzRDhlqCWXlpz%2F9aWYHDYJEhxdwP%2FjBD374wx%2F%2BQz0sfP%2F734cS3HD80pe%2BpM5I6ohRmTYOymhGoQNli%2FyXC%2FNiLfe0adOGL9A9DXHSpElKszVh83xKXZZuSgrVMDIyVGQlMhzMLgQJEC%2FgfvSjH%2F3PRvz4xz9%2B4oknoAQXR3nNHymXGFUYHbgyzRwMMLYQW%2BS8RpeTTjppyZIlZnbFbfgC3dMQp0yZojSrKgyRT0k0uUwvVMPIyBACIOD42te%2BJosRJEC8gPvpT3%2F6s5%2F97B%2FrYeEnP%2FkJlOEorxHHHX3bgCGoTjJa385tNTrr1q2zzZQyHf4hhxzSssvpXYhsSGlWVRgih5JiyWUV4LbbbrPaVh6Cz33uc6yQuGQxggSIF3C%2F%2BMUvfvnLX%2F7qV7%2Fy0%2FLPf%2F5zWMMRa8SJkTPqwNUlvQ6HNT5qdK644gq1Rcuttz%2FyyCP1Bj6GPmGYj9q7ECdOnMgQFy5caNqTXNRh9aykksLCFGUyVE90f2RFXLIYQaTwwu7Xv%2F71PzXiN7%2F5jWfC0Wu8UlL7K87oHZQXoiZtPZOSpQk1%2F%2BkEyN%2Fwp1WcMWNGX0IkQ3bOj2ghuawuX3311UYL5mXI012ToXpCUGSlaPBBGgxB4H73u9%2F9cyMseyYcvcYriVGFIWFC1uuo0WzRCMgrOAbf8B8Nf1qrefPmgTh8v92jENXl%2Ffbbb8GCBcuWLVu5cqW6zO%2F1cWxLSVFPFWVuSEoaaYksSflgCP72t78F7g9%2F%2BMO%2F1MPC73%2F%2F%2B3CU2vwxYlSFOKmMVqM5g0bH5lH3bSpzi3ZKqwgiP2k5tPQixIzMegvFkbuzJyOtLLv%2B%2BuuVFJ0N4ZBPZIiFWoELOiEIGXZ%2F%2FOMf%2F%2FSnP%2F35z3%2F20zKUOMpr%2FkiMoEMvo7mBDkmjw2RZrQJtbtHlaBWN6sccc0y%2FQmzqsdeuXbthw4aUFDVUZ6MUVGUoPZkdldEaDSII3F%2F%2B8pf%2FVQ8LUOIILsRAw62Cy2jlSI1mi3SttnhzQ7R%2F5N%2F5p%2F710qVLTX7Pec5z%2BgziM57xjMhw8eLFOrW0h0qKcYLxs39tHRnysshQYqq5EpnKQhAy7P7617%2F%2B73pY8NCTfuUFXubF%2FoR%2BmakW3byoRrEIRsEuNm%2FerA3ob4iRoY9uBSSUtJJcUkyipbORehIwMqQmmkoiy1Y5S4OQYfd%2FKuGhJ%2F2KGKlVRjNQ%2FZBtYEvYHgZHBVrR18ZzXv6ro9JXSYX%2Bg9gkw9WrV%2BtsTCnpbO666y4ytMJVGcIBCjQAVQn%2B7W9%2F21YPCx7SY8SINeLSny1qdNQW3kra3tn7axX12yAqZQoaiFylzyAqynHDIkOF0jxLhrfeemuRoWpQlaGWEBqA2B9YVYKFI7J%2ByxlltNf7K07KT83RCrRuSbEC0aYyVl522WWBeNxxx%2FUZREV57733NucpyhmWqw32UBnKxyJDiRwrHEqwiLFkNFs00qS2KNCmxkBkuAXi%2BeefXyDarn0D0YiS3tBHT1EubliVYdUNsSAr4iIxQiO3oQQTyegCUW3RFXkTbwWiVlH3rnlSu0A0PoN4%2Bumn9xnEfBNg2jfzG1r1hgbYjRs3Votykwy1e9oaXUtkmETeIcFtdTHGFr2YcgPRnAMic6hCJPy%2BhKie7LnnnrNmzXrRi150%2FPHHy6Om3Q3V3lBzR0EQkGHaGjJMPdmZDLc1bLEKUZdTID700EN9D1E9Yd7VrwEuuugiI8p1113XNKIopt%2F61reqMkxjSGXDEBwKkZMGok0yFiBK5GnTpqknaWtWrVr1mte8hrWXSdksYaIwV5gurLM1LzIsbc0O68lQiHwT9CrEsaBEiTxlypQDDzzwsMMOSz1JW5MdNrfccss999yTHTYaEe2Izk5%2Fp8tLd522ZvhEboLYpMShnlgKS99U5yTyvHnzjjrqqFNOOUU9yZBHDvrest%2FQZGY%2Be%2Fzxx81qGfKq3fUw9aTEUE8shaVU52qL0zd9Yknkww8%2F%2FMQTTzzjjDNs%2F9ST0tbcf%2F%2F9cs16auiyr6EMeS3bmmrssDrvsE80sRSIvT6x5MBDFbkk8rnnnrt%2B%2Fforr7wyu7yGtjXVIa%2BdtqYaBWK12c7eMEYxdOzrg9k5x79qrVXkaiJXv8xTT5ramqbuumVbU42mZrs69mV2ru6AaNqL06P7E32mGTNmaK1NeKnI1UTOFwD33XcfqyKTtDXqydC2pk0ZbqtDzNhXZmdv6G29OaU%2F%2BOCDzPfOO%2B%2FMrrANGzb0%2Bk7ZWOHs2bMXLlyotZY1ObQhiZz5hC6s2MMPP9xUTzpqa0qkqvgT%2Bs1eHNsju8K%2B8pWv%2BC%2FZn3j77bfr7Q2a1a8H8h1Lb31RFSvU05iRJcuKFStyhI2K3JTIZW9N2XfdaVtTotokEnL2J3LY7JTVgfp3hqJ8PbBp0yZb9Oyzz9b25yvT3vreuWqFPl850IuRl4qcRM43eWU%2BGXE9SZT9iU0zH6tluPmOJV9UaU6vuuoq89JZZ51lhDfIP%2B95z%2Butw0iqVqinMRIogmmtq8c1SOTSGJb5ZGT1ZNv2%2B8GKIZbSnCbRZstXpvzEuCkz1qxZ85KXvMQQxXamTp06%2FIkY254yiFUrXLZsmdp3zjnnZEZOa83Xq4lcGsNqIo9AhtVcru7WTlUpu7XTJPokOoR169adeeaZNrOPqgmbPHny8Ku27amByAptTx%2Fo0EMPjRXKFz2NAUtLsXXrVn4koaqJvLO9%2F%2B3Xk0RTLmfgiyGqKvmWKqWZI6fT1iro%2FBU9PewBBxwwceLE4ddu21MAEUEDsk%2Bj59IVVo95VQrLcXJprUtFHprIndaTbTv5YiD7tJWsGGKpKkpz%2Bb5Uz2AEUP04%2BNN%2FuDE32WOPPczwOY1CV2gjxwpzuKaeRpdbDmpoSuQRN4bbtv%2BKigy9j3dLc5NczrcrpmbVzIZUVbiz0sxn9DdtNom1JxtizrL1ORQTJn3CCSekK2SFGzduZEAySHeWGbnaWnclkYfKkK6z34HS6Z3qczSTgc%2B23LJli0%2BlqrAaQ1Q5JOxpPnvANtRkzZkzh0PLDps351DECnPcNRVkn6tVYlLdTeQU5bhhZJhvSqsHkMjlHJzoI%2FlgF1xwQY7wtNUPPvjglv1N7UmFWM5CUUykht5V3%2BAjxgrljpaiHKup4x16WEib358Mjb8N%2Ba65yDAHPjQdDyaXWXM51njlypU5YFsl5OZP22lpQ4uJAfm8887zKatHrutpaCE7ux599NGm1rr6fXz7MiwESyLn670c9VBkyH%2B5cA7Y9mHkco5MzKkDWojsjm15%2FkXtSYKIoGKiruX82vTVRvr169enK5Q7scLq0a4EkuO7RpPITQRz3AhRk3Y5LJEbRoYpKcaknH%2BhuclJLDb5EUcc0c4xsoltXYdYTvP2IdiKvNBX27w5BaVYoSTS02Q4eeSRR7qSyEMJlsPAksg5JpHq09mQYUqKQSWHJea8AQVw0aJFrLydE%2FtqXYdYyrGR0%2BdIMVHszAAG5Fih8c5H19%2Fm7ImmRC67ajqd8HZGkK7TXZdDjG02DSk3jAy1%2BnrsnAak7iWXdYg5DeipPvOeAU%2BaNEkK2IZc2UfRKOS8UB2sTR0rLGdP6GkMJ0lkFbl6fFenjWFqcSrJUII2D5k%2F9thjSWQG4r%2BzY25YZOgT%2BpzqcjmrTzK1Y4i17kJkH9OnTz%2FooIPKWfKKiQTJKY2xQoNBehpaqCZy9rmOoJ5EgOlmUovjg0MJ2lq2WU4XkAdmpHI22hVXXJHzSzkP%2F5FDmpuWp6%2BU6BrETMdSQDnWpuqzmEv6ah%2FRB73xxhurp0Hl%2FBOJXA7UTD1pOr5reHxFgF6Pew7jLMdmF4I5xl0nzz1y9o8NaXPmVDTdgp6BDCVNzotMLrc8G61EdyCWciwLlixZwphTTMq5ybFC6ZOepiSy1VMx%2F6FyvHCbMmwSYFI4%2FSA5V0%2B1iAabTuYrZ5b6bD4hNyynOZcLF7Cmlh1iogsQSzk22zVdqaFY4c0336yn8el1FUlkBs%2FmrSSxZNd%2FkWFxwx1CLPiGCrCcZMFec%2BYUrygaRNB%2F11fpT21R3XUSWePFc7jhySefbCjgRW2ecF9itBBTjmfMmMFEqsVEX61jKGd3K4J6mgwnqcg5kSz1pCrD9IY7O1az4GsSoIJeUpi9elsukXPP4oP%2BLw0WgrxFRfbxJHIuWWDDc8PIUI%2FdzvUzSowKon8zceJE07FNx0e4idKWS66wwnSFNrjxTk9TEll9VCVTTyLDuGF6wxz4%2F9f6YevhmBiKz4uHClAKxwRtpHIqKQvmg%2FKgECxXINF7sR1zHhM3WVkLc6p5uZ0eu8SoICpeZJ9ioi0wmbCVYoW6wlymgQGRQBI5J5Klnsi4yJCLkVI5cr1ADMcsFHwlf0GPAzYJsKRwOTO8erkHG5UGQ9DnZIW2ukZCDi1cuFB7y5f4e5slJTFyiDkWKcUkk0nVCpU8hU9PUxKZHKRV6kk5n9HKQ1BOQQnEHDic0yjCLueiBF96wOQvCevPI8CcyxwBEntS2JbLhR58DL6svkkOWRwNhiD%2FyaWtDKmdXvQvMUKIO7RC3pyucOPGjba2rCmJrLklitSTyHDo2XiBWM6E%2Bks9%2Ftw4JSr4Yn8lf5VgW0J9jwM2XZrAlksKa634ctNFrapXqiMCySSRWRODamdKqcZIILJCrXyuJMdEWEnpCvUK1UROReboqSfWMDKkmupJoTkjFKByRlmJ6sl51ZNFS%2F4qwTkJnEtwwKoA9aSawXIZJn2Cz5Zr1JlE%2BaAsPvbYY0OQrdNEp4mcGAlEtV8jmougpSs87bTTfCybN4lsOMn1VqyGIZ8ocn58ZJizuyEAIoZYPS8Urz%2FU4%2Ff1iPcVfLE%2FEs459LkWQUqwNpDn5oI3emkCzIWDIkDJoRAzQUVP88B5OHgu3Wktcl1j7tTpdY0THUNMV5hdDJzYliyJrOHKcGLLK4K53gpRaNCKDLk%2B7UAABDsDJRBhwhGv3zXCsmeItOAr9sdPbYlq%2FtpIhrk0MbkOWByQq9ioEaCZ5JWvfGVSWDObKxrrbRVGWUyDCLbf1lSjM4hNiZzxTl5waBv50ksv3bRpky1vnJJHud5KZMgNpRvXpx0IcpmGQAQop8jj9ZtGhJ3nq%2FiK%2FdkSO8vflOByOTptVhww146NALViBDh%2F%2FvzZs2fnAuV88Km7gUOuTLr%2F%2FvunImc4WbNmTa7fpeqVemLCq8qwXC0kuQziE40rNaiw4VgiVxvwvN8WfMX%2BSv31tk35q4DoB66%2F%2FvrNmzenBPPotWvX%2BoTG0HIJY5tfPbQW1CCrrNTIBFiiA4ilIs%2BZM0ciMJRczTCXkUs9sQLyiAy1NZFhinIuWkNBuWAIKJTI3VTYcKyGZ3Ldi4Kvan%2Bl%2FspfLfQO87dc5DQFpOSvka4pfzstxDuMdiHm2q5prSVCuaimT1muZqgCVmWYoizdqIZ2KIiOqKl61ZVwrAbped5vC77Yn21gS5QrfQ3NX9Usl5PUY%2FlIOhgb%2BNRTT801i%2FVhsmfWrFlEkALSFXyJdiFmP02u7ZrG0OZdtWqVYleuZkiG3JAoUpQlmnRTNOUyBTVBzJV%2FaO1HlXiifvWaciGggo%2F9JX%2FLBed2Vn%2B10DIj9rd8%2BXL2p%2Fql%2FsLHi0ihi%2FgSbUGMDE2UtqSWaocyjBsqyoY8vaFEyyW8pJ4EZIi5hBeICgtGSOUiSiU8VLUhDr5UDxJO%2BzJM%2Fprh5K9tqUPIRYrZn81sCJE0ub2FnuzJwJdoC2JpazKfVN0w3XWKMlPXG1rDe%2B%2B9t3otPmlYIPLEpgt5NV3OK%2FjItnqFuaH5e9NNNzXlb2lfTCC5AD7vfrLxJdqCqH7pA0p3XcZkRTlDnmpIFGaDdDa5JKTUY4i6kEDEBZ1cTA7H71TCQ08qHcHnxf7EH5b6mwGO1Q6tv1qr5O%2BKFSvkL%2FtL95cpWEM2ggmk02gNUS77KMqZrkp1M%2BRJFiWPczOgSy65RDXMlUnTYHMr66wuW38UqhAZHDGCFZS5Ip%2BHnvSr4Iv9lfxVnej67rvv3tkAV83fjB88Z9999x3ZADeyaA0xJWXmzJnZcV1GFP3XDi%2BQy7M4VxPEXFczHMntsXpY8DCXhww%2B9sdDy5U2qwXE%2B5c9CFw4%2FXP2wWhf2HTJ3yepegwTrSEml5s6m5LLVklm3XDDDWye2ZMM4aSqBCJTY20AwRSOJbBrulCp9PdXNoB3GCrANIApIPpnHyPjB5ueO3du2Yv1lAmwRAuI5dL%2F2XedHTbZ85rdDanLVjKGGIhyMBBBgUZ6EqM6i9eXG2HZM7lkrtfALX8feOABAmSpTRNIOpiyC4sASwGp7oBp%2F1uR7kYLiE37Dat1maMXQ9TcqJjqpqqihoJITQpL9VrD9AjZF%2BthwUNwg08nlAawKsDSQhcHrArQ5vR5OIzpTaI8xfnbFC0gDm%2BI1s0aWs9UlUBMOueK4egQY653DeXnGmHZk%2FDlgs25hngEmBKca4hX90LbbGUvdBGgAtLRLXyepGgNsXwHoHdl4TqJ1atXEwVpqCo6tS1btjRBVJ3JSm7msus4fqYeuWg4dp7JVdiTv16vHBGgd%2FA%2B3s17qleXX34522W%2BunoewknigD0iwBKtIWa3TbVDlFN6i9yEwqpWIQIBh6pavXw9s4PsU%2FWw4CH1wZf8zc0ACFCjrjo11RCSzz5UBS0leDS7oJ%2BkaA0xO7GV5uzETps9FCILY2TGFV2xxESHxHAEC8oHG%2BFhbqfAN7EuAkwTU03hdNHVL5LKDXt6RIAlWkAs3wQ09TdNEFUA1VmLk1tRyGiAYMIRr481IreiCD6vKXf1yBiXFM4XSRnjtPS6aNVs4cKFUpg185anqwQPE6OCGE8s95SRj3fccQdlVe%2BI8pFK8D4ihU%2F%2BlvvLqCFlDvGG3rZ6s6Ny5y2Tey%2FUkB3GSNI5nqiwpDpbf4MzFtUb8%2BAIFpQfbIRlyQsfynrACHDr1q3aQClc3RPj%2FYsJlm8yJ02a1JsEa%2B1AbCospTpbYautAkDAy%2BAAJWKksnKDo4RlyRt8QMNNudUbRcUEy42itAGLFy%2FOt%2Bk9aIJN0Rpi9TAH62YN0ydeeOGFmm3rb%2Bwz1SKSu0SRWG6yBeXd9bDgoSfhk78RIPGSMDfILJxOcNWqVdUyYuPZhD1ogk3RGmKabcNpjsG2klY1E4uVN41d07hZGTTKC470iBfLA85Py8gGX%2B5UBjr9UnF1b372Burn%2FSP%2Fzpaz%2FXo2havReuyrfstcveObMVYZVaDZIiK4qA%2FlnnlQ3tIID9%2FZuGeexG%2B6Z16%2BDs7xCDmqqBTiviBYawlxl112mThxYo5lzzd82ZlotXPTN7VFTQAFGoCojB7xktrvqIcFZHPLQQ4IN%2BhSON9nZoe%2BaSStjGnE1soN8%2FqFYK0lxNr2h7Mb%2B7Udmo%2FcAlNt2dC4BSY6GOFIj1De1Igb6ze%2FpFMOiDXiUpiEU0ayQ6HMcyM7su1pj9YQy53zchfM5cuX5y6YEKgGuRMrNJwRR3rMbVhvqIcFZOFTfIDO7UPplxVUv5Ozbcj84IMP7keCtTYhVnfKpstRW9iigpAbAhOjKoEjWNdee%2B2bGwGrZ5RgDog12RJvbsA69Ea2vdxODx9tQSzHgOlyUqBzW2Atd24LzBlxpMfqXZWv2f6WyqqwFGYC%2FjBfq9sepL1gwYJCsJebwWGiNcTSb2dvmBZEGc2dgWW0xFRhSSwcKe7KRlj2jOd1Ql7jlbpLf6UulS9GEBzBnb17LdqCmH5b56H%2FUEPVAdWALcpouUlfVLahcpN0YcFDT%2FpV7unNBJUR9KtfDYfg5MmT%2B1SDiXYhajtyAIkioBSws9wqnbhILDebl9cbGkF98HHAcnd50JV1Ki4Es2ew3wnW2oSYo3BUTzVUHeBl8lFWUhYxYhSOcnZ9PSwEHwFKeSaojBBvObit7NwfAwRr7UNk%2FOyfheWW8wRFVtAQozxVYVTqdY3AFD5wIWaCNKuVYQIhOGayuERbEDP5WXPrjwIWiMhoNZoYCQ1HeX1eIyx7xvNS2Gu8skqw32vx0GgXIuFIQGmoQAejoKUAAAXdSURBVKstbFFGR4zhSHTn1sOChwSol1ZGtDKGnOohquy1L%2FbNtB%2BtIearZ%2F5laNEqLlq0SG1hizJaknLGcETtrHpYIEApDDHQVYJKkyqfw7RGeYRvT0W7EPfZZ59Zs2ZpFRVotUWFlaEYKRc4QnZmPQC17Bl8tTIEiyAbzXG%2Bms0c6TGWCNbahDhp0iQQTX5z585VoEFZunSpiY0YZSuO0nZlPSx4yAT9CkEv82J%2F4g%2F9%2BfTp00dwvlLvR7sQrb%2FJj5pkpeHv6KOPVqOlKrnh%2BLJGwEeeWhmIQzAHS%2Bdo337cudBOtAWRfKZNmyYZmZryyhZltDxFSlITHZTY%2BWkZWY6JoLnYhFNOF1FMRna%2BUu9HBxDVBN0JKNCQmBrNGXFE7aR6WJDCFOpXIaia%2BxN%2FmINWx5gVlmgLovVHQWtCUwo0j5PRajS5QUZ3J9TDMnnKdIiplWYplwnwU6VpTCZyol2Ie%2B21l5TUKjI4togRUnjhCBxJ%2BmkZ2RD0GsVEQddXj%2BFETrSGKAc1JZo7ENUHtYXEpCoxylnUjm4Eo9QPhiDWiBMvCY%2FJilyNDiDSFGXJULYoo8GCDEfs%2FCRAWMFFUMqzQoVIIpt2JkyYMIZlWGsfopTUo%2Bj1zG0YIaV3MQICB6WflgtBr%2FHKJ%2B8Mpl6LdiFOmTLF5EdcaguzU3YNITguqgd8lhEkUlKV9XJfIucAmrEtw1qbEJUFfbLc1KxwOrZIbpwRx8PqYcFDBP3KC5LI%2FmTMJ3KiA4iGFoWCLcpWdQMy4BbUgzBhRZBO9TQSOWdij%2FlETrSGSEoEpdGTnpKU2SGFVzgmQlAxgRhonflorgbQd9EWxN122427EReJSVUJS4zhKFhkCLJC%2Bc46lfKcVDcecrnWJkQ4QIEGIJjIjRhxVEPg8zME8dUGEWzamnEiw1o7EGv1oSUFmi3KaK4HGY5z6mHBQ0%2F6lRdoa8aVDGttQiy1hdnRGsUR40GNQJBRJpGlPPccVzKstQ8RF0kqVZFSOuhuViNCEFyIqXW8ybDWEUQSY4saQGmL2gGNsOwZz49PGdbahFgKNL%2Fjemo0MWInr0OQPIsMvXJcybDWEUTNM0xgQSZ5sYPST0yRJVIyzKQ8gLiDCEQqU1vkrMwF7tn1sOAhr8QX5dFf7agfo12IagWVqS0UR4zA7VsPCx560q9y1vt4k2GtU4gSli3Snfzdpx4I0iYZckwlZRzmcq1TiEjhhRqO0%2BphAVYyTEkZh7lcax8iiREa12OLqIWjnxI5Mhy3uVzrCGJqi4xGbWojIkNwx20u19qEWKv32yAmoyPGhOV0NuM2l2vtQyy2SHSkhx09%2BhkZjudcrnUKcffdd09Gh6Oflj0jlwcQ24KY2pKMDkc%2FI0O5PG4NsdYpxNgicOHoJxkWQxxAbBEFYjI6HCPD5PK4rSq1jiDCFFsELhyLDMdzLtdGADG2GI5%2BYjqA2C7E2vYZ%2FcxGlFweQOwMInDhGBkOIHYGMRkdMQo0BxBrI4Y4oREDiLURQExGh2MWPDOA2C7EWn03BGQRY8LyAGJnEFNbBhCbomOIscXCMRB3qUervx6zMRKIRYyhOc477dpoIJYYQOwMYq1iiwOIJUYCsSrGQVWpDSB2JUYOscQA4kggNnEcQOwYYm2IGAcQRw4xHLMwgDgSiIXjAGJtZBBrFTEOINZGA7HKcQBxAHG00TWI45njCCHWtuc4gDiAONoYLcRqtPqLMRsDiF2IkUOsDeHY6uVjNgYQuxCjglgbcKzHAGIXYgCxCzFaiLXtObZ67diMAcQuRBcg1sY9xwHELkR3INYqHFu9cAzGAGIXomsQaw2OrV41BqP7EMchx25CrI1XMXYZ4viMAcQuxABiF2IAsQsxgNiFGEDsQgwgdiEGELsQA4hdiAHELsQAYhdiALELMYDYhRhA7EIMIHYhBhC7EAOIXYgBxC7EAGIXYgCxCzGA2IUYQOxCDCB2IQYQuxADiF2IAcQuxP%2BDOIhRxgBiF%2BL%2FAvKyxgrwmMDgAAAAAElFTkSuQmCC%22%3E%3C%2Fimage%3E%3C%2Fg%3E%3C%2Fmask%3E%3ClinearGradient%20id%3D%22k%22%20x1%3D%22103.9%22%20x2%3D%2281.41%22%20y1%3D%22165.8%22%20y2%3D%2244.09%22%20xlink%3Ahref%3D%22%23b%22%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Ctitle%3E-%3C%2Ftitle%3E%3Cg%20class%3D%22cls-2%22%3E%3Cg%20data-name%3D%22Layer%202%22%3E%3Cpolygon%20class%3D%22cls-3%22%20points%3D%22100.6%206.76%20102.2%2010.96%20106.7%2011.2%20103.2%2014.04%20104.4%2018.38%20100.6%2015.94%2096.85%2018.38%2098.01%2014.04%2094.52%2011.2%2099.01%2010.96%22%3E%3C%2Fpolygon%3E%3Cpolygon%20class%3D%22cls-4%22%20points%3D%22100.6%206.76%20102.2%2010.96%20106.7%2011.2%20103.2%2014.04%20104.4%2018.38%20100.6%2015.94%2096.85%2018.38%2098.01%2014.04%2094.52%2011.2%2099.01%2010.96%22%3E%3C%2Fpolygon%3E%3Cpath%20class%3D%22cls-3%22%20d%3D%22M40.95%2C10.54a60.69%2C60.69%2C0%2C0%2C0-26.26%2C8.77A60.94%2C60.94%2C0%2C0%2C1%2C53.63%2C70.56a60.94%2C60.94%2C0%2C0%2C1-28.72%2C57.6%2C60.95%2C60.95%2C0%2C1%2C0%2C16-117.62ZM57.26%2C62.75c11.31-11%2C23.15-7.81%2C27.88-6.11a21.47%2C21.47%2C0%2C0%2C1-13%2C10.61A14.09%2C14.09%2C0%2C0%2C1%2C57.26%2C62.75Z%22%3E%3C%2Fpath%3E%3Cpath%20class%3D%22cls-5%22%20d%3D%22M41.22%2C10.36A60.69%2C60.69%2C0%2C0%2C0%2C15%2C19.13%2C60.94%2C60.94%2C0%2C0%2C1%2C53.9%2C70.38%2C60.94%2C60.94%2C0%2C0%2C1%2C25.18%2C128a60.95%2C60.95%2C0%2C1%2C0%2C16-117.62Zm17%2C52.22c11.31-11%2C23.15-7.81%2C27.88-6.11a21.47%2C21.47%2C0%2C0%2C1-13%2C10.61A14.09%2C14.09%2C0%2C0%2C1%2C58.25%2C62.57Z%22%3E%3C%2Fpath%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M40.95%2C10.54a60.69%2C60.69%2C0%2C0%2C0-26.26%2C8.77A60.94%2C60.94%2C0%2C0%2C1%2C53.63%2C70.56a60.94%2C60.94%2C0%2C0%2C1-28.72%2C57.6%2C60.95%2C60.95%2C0%2C1%2C0%2C16-117.62ZM57.26%2C62.75c11.31-11%2C23.15-7.81%2C27.88-6.11a21.47%2C21.47%2C0%2C0%2C1-13%2C10.61A14.09%2C14.09%2C0%2C0%2C1%2C57.26%2C62.75Z%22%3E%3C%2Fpath%3E%3Ccircle%20class%3D%22cls-3%22%20cx%3D%2254.68%22%20cy%3D%222.5%22%20r%3D%222.5%22%3E%3C%2Fcircle%3E%3Ccircle%20class%3D%22cls-3%22%20cx%3D%2231.43%22%20cy%3D%2251.72%22%20r%3D%222.5%22%3E%3C%2Fcircle%3E%3Cpolygon%20class%3D%22cls-3%22%20points%3D%225.33%2028.6%206.74%2032.26%2010.66%2032.47%207.62%2034.95%208.63%2038.74%205.33%2036.6%202.04%2038.74%203.05%2034.95%200%2032.47%203.92%2032.26%22%3E%3C%2Fpolygon%3E%3Cg%20class%3D%22cls-6%22%3E%3Ccircle%20class%3D%22cls-3%22%20transform%3D%22translate(-12.18%2020.67)%20rotate(-24.1)%22%20cx%3D%2242.31%22%20cy%3D%2238.86%22%20r%3D%229.78%22%3E%3C%2Fcircle%3E%3Ccircle%20class%3D%22cls-7%22%20transform%3D%22translate(-12.18%2020.67)%20rotate(-24.1)%22%20cx%3D%2242.31%22%20cy%3D%2238.86%22%20r%3D%227.42%22%3E%3C%2Fcircle%3E%3Ccircle%20class%3D%22cls-3%22%20transform%3D%22translate(-7.84%209.39)%20rotate(-5.43)%22%20cx%3D%2295.17%22%20cy%3D%2287.41%22%20r%3D%2214.84%22%3E%3C%2Fcircle%3E%3Ccircle%20class%3D%22cls-8%22%20transform%3D%22translate(-7.84%209.39)%20rotate(-5.43)%22%20cx%3D%2295.17%22%20cy%3D%2287.41%22%20r%3D%2212.48%22%3E%3C%2Fcircle%3E%3Ccircle%20class%3D%22cls-3%22%20transform%3D%22translate(-9.31%207.81)%20rotate(-5.43)%22%20cx%3D%2277.75%22%20cy%3D%22102.2%22%20r%3D%229.78%22%3E%3C%2Fcircle%3E%3Ccircle%20class%3D%22cls-9%22%20transform%3D%22translate(-9.31%207.81)%20rotate(-5.43)%22%20cx%3D%2277.75%22%20cy%3D%22102.2%22%20r%3D%227.42%22%3E%3C%2Fcircle%3E%3Ccircle%20class%3D%22cls-3%22%20transform%3D%22translate(-42.45%2025.11)%20rotate(-20.49)%22%20cx%3D%2248.23%22%20cy%3D%22130%22%20r%3D%229.78%22%3E%3C%2Fcircle%3E%3Ccircle%20class%3D%22cls-10%22%20transform%3D%22translate(-42.45%2025.11)%20rotate(-20.49)%22%20cx%3D%2248.23%22%20cy%3D%22130%22%20r%3D%227.42%22%3E%3C%2Fcircle%3E%3C%2Fg%3E%3Cpolygon%20class%3D%22cls-11%22%20points%3D%2282.01%2012.13%2084.81%2019.4%2092.6%2019.82%2086.55%2024.73%2088.55%2032.27%2082.01%2028.03%2075.46%2032.27%2077.47%2024.73%2071.42%2019.82%2079.2%2019.4%22%3E%3C%2Fpolygon%3E%3Cpolygon%20class%3D%22cls-12%22%20points%3D%2282.01%2012.13%2084.81%2019.4%2092.6%2019.82%2086.55%2024.73%2088.55%2032.27%2082.01%2028.03%2075.46%2032.27%2077.47%2024.73%2071.42%2019.82%2079.2%2019.4%22%3E%3C%2Fpolygon%3E%3Cpolygon%20class%3D%22cls-13%22%20points%3D%225.33%2028.6%206.74%2032.26%2010.66%2032.47%207.62%2034.95%208.63%2038.74%205.33%2036.6%202.04%2038.74%203.05%2034.95%200%2032.47%203.92%2032.26%22%3E%3C%2Fpolygon%3E%3Cg%20class%3D%22cls-14%22%3E%3Cg%20class%3D%22cls-15%22%3E%3Cpath%20class%3D%22cls-16%22%20d%3D%22M59.3%2C62.09c-6.22%2C0-10.21-4.51-8.09-7.48s6.61-2.79%2C12.07-2.77%2C10.67.68%2C13.18%2C1.7-6.1%2C1.54-10.28%2C3.31A19.07%2C19.07%2C0%2C0%2C0%2C59.3%2C62.09Z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3Cg%20class%3D%22cls-17%22%3E%3Cg%20class%3D%22cls-18%22%3E%3Cpath%20class%3D%22cls-19%22%20d%3D%22M86%2C57.82c-2.87%2C7.65-10.64%2C11.9-10.16%2C16.68s-.48%2C18.89%2C5.26%2C25.82C86%2C106.26%2C66.71%2C83.1%2C94.44%2C70.43c3.13-1.43%2C3.95-17.65-.6-18.89C85.06%2C49.15%2C86%2C57.82%2C86%2C57.82Z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3Cpath%20class%3D%22cls-20%22%20d%3D%22m89.06%2049.65c-17.66-2.69-29.17%200.7-38.58%205.89%200%200-1.71-4.23-2.79-6.5-0.69-1.4%2014.12-6.3%2020.31-5.92s21.06%206.53%2021.06%206.53z%22%3E%3C%2Fpath%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" width="33" height="38" style="display: block;"></div><div class="gravatar-wrapper-32"><img src="./stackoverflow_files/8ff1bfcff680fcc6dcd170ba54194ecb" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/1309352/bleeding-fingers">Bleeding Fingers</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">3,686</span><span title="6 gold badges"><span class="badge1"></span><span class="badgecount">6</span></span><span title="19 silver badges"><span class="badge2"></span><span class="badgecount">19</span></span><span title="50 bronze badges"><span class="badge3"></span><span class="badgecount">50</span></span>
+        </div>
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        <div class="user-info ">
+    <div class="user-action-time">
+        asked <span title="2012-07-05 01:59:44Z" class="relativetime">Jul 5 '12 at 1:59</span>
+    </div>
+    <div class="user-gravatar32 wb-hat-checked">
+        <a href="http://stackoverflow.com/users/8203/martin08"><div class="gravatar-wrapper-32"><img src="./stackoverflow_files/c49e4bf09aebb6e7ef84ef648ad14954" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/8203/martin08">Martin08</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">7,330</span><span title="16 gold badges"><span class="badge1"></span><span class="badgecount">16</span></span><span title="63 silver badges"><span class="badge2"></span><span class="badgecount">63</span></span><span title="84 bronze badges"><span class="badge3"></span><span class="badgecount">84</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>
+        </tr>
+                    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-11337048" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-11337048" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz?rq=1#" onclick=""></a>
+        </div>         
+    </td>
+</tr>        </tbody></table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								1 Answer
+                                <span style="display:none;" itemprop="answerCount">1</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active" data-shortcut="A">
+            active</a>
+        <a href="http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest" data-shortcut="O">
+            oldest</a>
+        <a class="youarehere" href="http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes" data-shortcut="V">
+            votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="11338945"></a>
+<div id="answer-11338945" class="answer accepted-answer" data-answerid="11338945" itemscope="" itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="11338945">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">5</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>It is quite simple, here's a <code>dot</code> file for your example (<code>test.dot</code>):</p>
+
+<pre><code>strict digraph {
+    1 [label="a: level=0"];
+    2 [label="b: level=1"];
+    3 [label="c: level=1"];
+    1 -&gt; 2 [label="3"];
+    1 -&gt; 3 [label="2"];
+}
+</code></pre>
+
+<p>which with <code>dot -Tpng -o test.png test.dot</code> will output:</p>
+
+<p><img src="./stackoverflow_files/hcNb8.png" alt="dot output"></p>
+
+<p>There are way more parameters you can set to get the layout that you want. I suggest you look through the <a href="http://www.graphviz.org/content/dot-language" rel="nofollow noreferrer">Graphviz documentation</a>.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://stackoverflow.com/a/11338945" title="short permalink to this answer" class="short-link" id="link-post-11338945">share</a><span class="lsep">|</span><a href="http://stackoverflow.com/posts/11338945/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2012-07-05 06:36:06Z" class="relativetime">Jul 5 '12 at 6:36</span>
+    </div>
+    <div class="user-gravatar32 wb-hat-checked">
+        <a href="http://stackoverflow.com/users/885443/maehler"><div class="gravatar-wrapper-32"><img src="./stackoverflow_files/2a68a875c3602b8dc56f8acb6ebd5492" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://stackoverflow.com/users/885443/maehler">Maehler</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">3,321</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="22 silver badges"><span class="badge2"></span><span class="badgecount">22</span></span><span title="36 bronze badges"><span class="badge3"></span><span class="badgecount">36</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-11338945" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-11338945" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz?rq=1#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+									<a name="new-answer"></a>
+						<form id="post-form" action="http://stackoverflow.com/questions/11337048/answer/submit" method="post" class="post-form">
+						    <input type="hidden" id="post-id" value="11337048">
+                            <input type="hidden" id="qualityBanWarningShown" name="qualityBanWarningShown" value="false">
+                            <input type="hidden" name="referrer" value="http://stackoverflow.com/questions/1806870/how-to-add-edge-labels-in-graphviz">
+							<h2 class="space">Your Answer</h2>
+
+
+            <script>
+            StackExchange.ifUsing("editor", function () {
+                StackExchange.using("externalEditor", function () {
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.init();
+                    });
+                });
+            }, "code-snippets");
+        </script>
+    
+
+<script>
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+       
+        StackExchange.using("externalEditor", function() {
+                // Have to fire editor after snippets, if snippets enabled
+                if (StackExchange.settings.snippets.snippetsEnabled) {
+                    StackExchange.using("snippets", function() {
+                        createEditor();
+                    });
+                }
+                else {
+                    createEditor();
+                }
+            });
+
+            function createEditor() {
+                prepareEditor({
+                    heartbeatType: 'answer',
+                convertImagesToLinks: true,
+                reputationToPostImages: 10,
+                bindNavPrevention: true,
+                postfix: "",
+                    onDemand: true,
+                    discardSelector: ".discard-answer"
+                    ,immediatelyShowMarkdownHelp:true
+                    });
+                
+
+        }
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor js-post-editor">
+
+    <div style="position: relative;">     
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"><ul id="wmd-button-row" class="wmd-button-row"><li id="wmd-bold-button" class="wmd-button" style="left: 0px;"><span style="background-position: 0px -20px;"></span></li><li id="wmd-italic-button" class="wmd-button" style="left: 25px;"><span style="background-position: -20px -20px;"></span></li><li id="wmd-spacer1" class="wmd-spacer" style="left: 50px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-link-button" class="wmd-button" style="left: 75px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-quote-button" class="wmd-button" style="left: 100px;"><span style="background-position: -60px -20px;"></span></li><li id="wmd-code-button" class="wmd-button" style="left: 125px;"><span style="background-position: -80px -20px;"></span></li><li id="wmd-image-button" class="wmd-button" style="left: 150px;"><span style="background-position: -100px -20px;"></span></li><li id="wmd-spacer2" class="wmd-spacer" style="left: 175px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-olist-button" class="wmd-button" style="left: 200px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-ulist-button" class="wmd-button" style="left: 225px;"><span style="background-position: -140px -20px;"></span></li><li id="wmd-heading-button" class="wmd-button" style="left: 250px;"><span style="background-position: -160px -20px;"></span></li><li id="wmd-hr-button" class="wmd-button" style="left: 275px;"><span style="background-position: -180px -20px;"></span></li><li id="wmd-spacer3" class="wmd-spacer" style="left: 300px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-undo-button" class="wmd-button" style="left: 325px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-redo-button" class="wmd-button" style="left: 350px;"><span style="background-position: -220px -20px;"></span></li></ul></div>
+            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
+        </div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="1998a03de64119bcb7a49612d08c2203">
+        <input id="author" name="author" type="text">
+    </div>
+
+
+
+</div>
+							<div style="position: relative;">
+								
+								            <div class="form-item new-post-login">
+        
+                <div class="new-login-form">
+                    <div class="new-login-left">
+                        <h3>Sign up or <a id="login-link" href="http://stackoverflow.com/users/login?ssrc=question_page&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f11337048%2fhow-to-annotate-nodes-and-edges-with-graphviz%23new-answer">log in</a></h3>
+                        <script>
+                            StackExchange.ready(function () {
+                                StackExchange.helpers.onClickDraftSave('#login-link');
+                            });
+                        </script>
+                        <div class="preferred-login google-login">
+                            <p><span class="icon"></span><span>Sign up using Google</span></p>
+                        </div>
+                        <div class="preferred-login facebook-login">
+                            <p><span class="icon"></span><span>Sign up using Facebook</span></p>
+                        </div>
+                        <div class="preferred-login stackexchange-login">
+                            <p><span class="icon"></span><span>Sign up using Email and Password</span></p>
+                        </div>
+                    </div>
+                    <input type="hidden" name="manual-openid" class="manual-openid">
+                    <input type="hidden" name="use-facebook" class="use-facebook" value="false">
+                    <input type="hidden" name="use-google" class="use-google" value="false">
+                    <input type="button" class="submit-openid" value="Submit" style="display:none">
+                    <div class="new-login-right">
+                                <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tbody><tr>
+                    <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="email" size="30" maxlength="100" value="" tabindex="106" placeholder="required, but never shown">
+                </div>
+            </td>
+        </tr>
+        </tbody></table>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                StackExchange.ready(
+                    function () {
+                        StackExchange.openid.initPostLogin('.new-post-login', 'http%3a%2f%2fstackoverflow.com%2fquestions%2f11337048%2fhow-to-annotate-nodes-and-edges-with-graphviz%23new-answer', 'question_page');
+                    }
+                );
+            </script>
+            <noscript>
+                        &lt;h3&gt;Post as a guest&lt;/h3&gt;
+    &lt;div class="form-item"&gt;
+        &lt;table&gt;
+        &lt;tr&gt;
+                    &lt;td class="vm"&gt;
+                &lt;div&gt;
+                    &lt;label for="display-name"&gt;Name&lt;/label&gt;
+                    &lt;input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105"&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;label for="m-address"&gt;Email&lt;/label&gt;
+                    &lt;input id="m-address" name="m-address" type="email" size="30" maxlength="100" value="" tabindex="106" placeholder="required, but never shown" /&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+
+            </noscript>
+
+							</div>
+           
+															<div class="form-submit cbt">
+									<input id="submit-button" type="submit" value="Post Your Answer" tabindex="110">
+									<a href="http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz?rq=1#" class="btn-clear discard-answer dno">discard</a>
+
+<p class="privacy-policy-agreement">
+By posting your answer, you agree to the <a href="http://stackexchange.com/legal/privacy-policy" target="_blank">privacy policy</a> and <a href="http://stackexchange.com/legal/terms-of-service" target="_blank">terms of service</a>.</p>
+<input type="hidden" name="legalLinksShown" value="1">								</div>
+						</form>
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you're looking for?							Browse other questions tagged <a href="http://stackoverflow.com/questions/tagged/graphviz" class="post-tag" title="show questions tagged &#39;graphviz&#39;" rel="tag">graphviz</a>  or <a href="http://stackoverflow.com/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tbody><tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2012-07-05 01:59:44Z"><b>4 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>1568 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz?lastactivity" class="lastactivity-link" title="2014-11-22 20:51:19Z">2 years ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </tbody></table>
+			    </div>
+						
+			<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk1039821415",[5,17,2221]).setZone(45); });
+            </script>
+            <div class="everyonelovesstackoverflow" id="adzerk1039821415" pnywj6s="" hidden=""></div>
+            <div id="hireme"></div>
+        <script>
+window.clcfl_request = 'AtxVWj70N9QIAAAAAFj9rAACAAAAAgAAAAAKAAAAfGdyYXBodml6fAAf5ZTIAHDc-0RZ';
+;(function(n){var t,r,i;try{if(typeof[].indexOf!="function")return;if(window.attachEvent&&!window.addEventListener)return;if(n.allowed[0]!=="*"&&n.allowed.indexOf(location.hostname)===-1)return;t=window;t.clc=t.clc||{};r=t.clc_request||t.clcfl_request;r||console.warn("clc_request missing");t.clc.init=t.clc.init||[];t.clc.init.push(function(n){return n.load()});t.clc.options=n;i=document.createElement("script");i.async=!0;i.src=n.lib;document.body.appendChild(i)}catch(u){console.error("[clc] Error in loader:",u)}}).call(null, {"azw":true,"kt":2000,"tto":true,"autoload":true,"d":{"sb":["hireme","clc-sb"],"tlb":["careers1","clc-tlb"],"mlb":["careers3","clc-mlb"]},"allowed":["stackoverflow.com","serverfault.com","blog.codinghorror.com","talent.stackoverflow.com"],"h":"clc.stackoverflow.com","u":"//clc.stackoverflow.com/markup.js","lib":"//cdn.sstatic.net/clc/clc.min.js?v=1492847a8483"});        </script>
+			
+
+            
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/1806870?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted large">100</div></a><a href="http://stackoverflow.com/questions/1806870/how-to-add-edge-labels-in-graphviz?rq=1" class="question-hyperlink">How to add edge labels in Graphviz?</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/10151318?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">2</div></a><a href="http://stackoverflow.com/questions/10151318/how-can-i-give-a-graph-nodes-fixed-position-in-graphviz-and-how-can-i-make-the-e?rq=1" class="question-hyperlink">How can I give a graph nodes fixed position in graphviz and how can i make the edges not overlapped?</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/12466951?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">7</div></a><a href="http://stackoverflow.com/questions/12466951/graphviz-how-to-arrange-nodes-with-circo-layout?rq=1" class="question-hyperlink">Graphviz: how to arrange nodes with circo layout</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/12868654?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">3</div></a><a href="http://stackoverflow.com/questions/12868654/draw-edge-from-node-to-edge-in-graphviz?rq=1" class="question-hyperlink">draw edge from node to edge in graphviz</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/12983885?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">3</div></a><a href="http://stackoverflow.com/questions/12983885/graphviz-allow-edge-node-overlap?rq=1" class="question-hyperlink">Graphviz allow edge-node overlap</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/13130615?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="http://stackoverflow.com/questions/13130615/how-can-i-allow-nodes-to-be-spaced-out-to-shorten-edges-in-graphviz?rq=1" class="question-hyperlink">How can I allow nodes to be spaced out to shorten edges in GraphViz?</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/17606393?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="http://stackoverflow.com/questions/17606393/graphviz-how-to-assign-multiple-color-to-nodes?rq=1" class="question-hyperlink">graphViz: how to assign multiple color to nodes</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/17657768?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">3</div></a><a href="http://stackoverflow.com/questions/17657768/how-to-automate-the-edge-colors-coming-out-of-a-node-in-graphviz?rq=1" class="question-hyperlink">How to automate the edge colors coming out of a node in graphviz</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/19159620?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">4</div></a><a href="http://stackoverflow.com/questions/19159620/graphviz-distance-between-edge-and-by-passed-nodes-with-neato?rq=1" class="question-hyperlink">Graphviz: Distance between edge and by passed nodes with neato</a></div><div class="spacer js-gps-track"><a href="http://stackoverflow.com/q/21177270?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">0</div></a><a href="http://stackoverflow.com/questions/21177270/how-can-i-create-symmetric-edges-in-graphviz?rq=1" class="question-hyperlink">How can I create symmetric edges in Graphviz?</a></div>
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="http://stackexchange.com/questions?tab=hot" class="js-gps-track" data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li>
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/67061/can-time-travel-make-us-rich-through-trading-and-is-this-a-problem" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can time travel make us rich through trading, and is this a problem?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-politics" title="Politics Stack Exchange"></div><a href="http://politics.stackexchange.com/questions/14274/has-power-been-stripped-away-from-the-us-constitution-during-the-obama-administ" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:475 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Has power been stripped away from the US Constitution, during the Obama Administration?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-christianity" title="Christianity Stack Exchange"></div><a href="http://christianity.stackexchange.com/questions/54512/did-joseph-smith-translate-the-book-of-mormon" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:304 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Did Joseph Smith “translate the Book of Mormon”?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-serverfault" title="Server Fault"></div><a href="http://serverfault.com/questions/824882/whats-the-point-of-repeating-an-email-address-in-the-envelope-and-the-the-he" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:2 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What's the point of repeating an email address in "The Envelope" and the "The Header"?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-superuser" title="Super User"></div><a href="http://superuser.com/questions/1162332/why-do-cds-and-dvds-fill-up-from-the-centre-outwards" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:3 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why do CDs and DVDs fill up from the centre outwards?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/106079/detect-ms-windows" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Detect MS Windows
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/82591/how-to-help-reduce-students-anxiety-in-an-oral-exam" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to help reduce students' anxiety in an oral exam?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/367153/word-for-unproportional-punishment" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Word for unproportional punishment?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-travel" title="Travel Stack Exchange"></div><a href="http://travel.stackexchange.com/questions/85518/rent-clothing-in-frankfurt-being-warm-without-cold-weather-clothing" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:273 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Rent clothing in Frankfurt / Being warm without cold weather clothing
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-mathoverflow" title="MathOverflow"></div><a href="http://mathoverflow.net/questions/259054/generalization-of-winding-number-to-higher-dimensions" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:504 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Generalization of winding number to higher dimensions
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-space" title="Space Exploration Stack Exchange"></div><a href="http://space.stackexchange.com/questions/19714/electrical-propulsion-thrust" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:508 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Electrical Propulsion Thrust
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/66895/ultimate-australian-canal" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Ultimate Australian Canal
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-dba" title="Database Administrators Stack Exchange"></div><a href="http://dba.stackexchange.com/questions/160321/when-does-it-make-sense-to-duplicate-data-for-querying" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:182 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    When does it make sense to duplicate data for querying
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-rpg" title="Role-playing Games Stack Exchange"></div><a href="http://rpg.stackexchange.com/questions/92791/what-does-joker-with-tm-mean-in-the-deck-of-many-things" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:122 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What does Joker “with TM” mean in the Deck of Many Things?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-askubuntu" title="Ask Ubuntu"></div><a href="http://askubuntu.com/questions/869373/undo-a-gzip-recursively" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:89 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    undo a gzip recursively
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-blender" title="Blender Stack Exchange"></div><a href="http://blender.stackexchange.com/questions/70820/preserving-vertices" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:502 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Preserving Vertices
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-security" title="Information Security Stack Exchange"></div><a href="http://security.stackexchange.com/questions/147188/is-it-bad-practice-to-use-get-method-as-login-username-password-for-administrato" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:162 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is it bad practice to use GET method as login username/password for administrators?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-codereview" title="Code Review Stack Exchange"></div><a href="http://codereview.stackexchange.com/questions/152018/how-are-you-spending-your-time-on-the-computer" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:196 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    "How are you spending your time on the computer?"
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-aviation" title="Aviation Stack Exchange"></div><a href="http://aviation.stackexchange.com/questions/34410/are-the-guns-on-a-fighter-jet-fixed-or-can-they-be-aimed" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:528 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Are the guns on a fighter jet fixed or can they be aimed?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/149368/why-isnt-the-religion-of-rhllor-the-lord-of-light-dominant" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why isn't the religion of R'hllor, The Lord of Light, dominant?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-android" title="Android Enthusiasts Stack Exchange"></div><a href="http://android.stackexchange.com/questions/166211/why-are-zygote-and-whatsapp-asking-for-root" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:139 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why are Zygote and Whatsapp asking for root?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-ell" title="English Language Learners Stack Exchange"></div><a href="http://ell.stackexchange.com/questions/114908/what-time-does-by-the-time-mean" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:481 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What time does "by the time" mean?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-money" title="Personal Finance &amp; Money Stack Exchange"></div><a href="http://money.stackexchange.com/questions/74478/personal-taxes-for-shopify-paypal-shop" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:93 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Personal taxes for Shopify / Paypal shop?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-security" title="Information Security Stack Exchange"></div><a href="http://security.stackexchange.com/questions/147222/is-it-a-security-vulnerability-if-the-addresses-of-university-students-are-expos" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:162 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is it a security vulnerability if the addresses of university students are exposed?
+                </a>
+
+            </li>
+    </ul>
+
+        <a href="http://stackoverflow.com/questions/11337048/how-to-annotate-nodes-and-edges-with-graphviz?rq=1#" class="show-more js-show-more js-gps-track" data-gps-track="posts_hot_network.click({ item_type:3, location:11 })">
+            more hot questions
+        </a>
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="http://stackoverflow.com/feeds/question/11337048" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/11337048/ivc/726e');});
+</script>
+<noscript>
+    &lt;div&gt;&lt;img src="/posts/11337048/ivc/726e" class="dno" alt="" width="0" height="0"&gt;&lt;/div&gt;
+</noscript><div style="display:none" id="prettify-lang"></div></div>
+
+
+        </div>
+    </div><script async="" src="./stackoverflow_files/clc.min.js"></script>
+    <div id="footer" class="categories">
+        <div class="footerwrap">            
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                    <a href="http://stackoverflow.com/company/about">about us</a>
+                        <a href="http://stackoverflow.com/tour">tour</a>
+                    <a href="http://stackoverflow.com/help">help</a>
+                    <a href="http://stackoverflow.blog/?blb=1">blog</a>
+                        <a href="http://chat.stackoverflow.com/">chat</a>
+                    <a href="http://data.stackexchange.com/">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackoverflow.com/company/work-here">work here</a>
+                    <a href="https://www.stackoverflowbusiness.com/advertise">advertising info</a>
+
+                    <a onclick="StackExchange.switchMobile(&quot;on&quot;)">mobile</a>
+                    <b><a href="http://stackoverflow.com/contact">contact us</a></b>
+                        <b><a href="http://meta.stackoverflow.com/">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tbody><tr>
+            <th colspan="4">
+                Technology
+            </th>
+            <th colspan="2">
+                Life / Arts
+            </th>
+            <th colspan="2">
+                Culture / Recreation
+            </th>
+            <th colspan="2">
+                Science
+            </th>
+            <th>
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com/" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com/" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com/" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com/" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com/" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com/" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com/" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com/" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://softwareengineering.stackexchange.com/" title="professionals, academics, and students working within the systems development life cycle who care about creating, delivering, and maintaining software responsibly">Software Engineering</a></li>
+                        <li><a href="http://unix.stackexchange.com/" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com/" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com/" title="WordPress developers and administrators">WordPress Development</a></li>
+                        <li><a href="http://gis.stackexchange.com/" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com/" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com/" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com/" title="information security professionals">Information Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://dba.stackexchange.com/" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com/" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com/" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com/" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com/" title="users of Wolfram Mathematica">Mathematica</a></li>
+                        <li><a href="http://salesforce.stackexchange.com/" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                        <li><a href="http://expressionengine.stackexchange.com/" title="administrators, end users, developers and designers for ExpressionEngine® CMS">ExpressionEngine® Answers</a></li>
+                        <li><a href="http://crypto.stackexchange.com/" title="software developers, mathematicians and others interested in cryptography">Cryptography</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://codereview.stackexchange.com/" title="peer programmer code reviews">Code Review</a></li>
+                        <li><a href="http://magento.stackexchange.com/" title="users of the Magento e-Commerce platform">Magento</a></li>
+                        <li><a href="http://dsp.stackexchange.com/" title="practitioners of the art and science of signal, image and video processing">Signal Processing</a></li>
+                        <li><a href="http://raspberrypi.stackexchange.com/" title="users and developers of hardware and software for Raspberry Pi">Raspberry Pi</a></li>
+                        <li><a href="http://codegolf.stackexchange.com/" title="programming puzzle enthusiasts and code golfers">Programming Puzzles &amp; Code Golf</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com/" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com/" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://graphicdesign.stackexchange.com/" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="http://movies.stackexchange.com/" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                        <li><a href="http://music.stackexchange.com/" title="musicians, students, and enthusiasts">Music: Practice &amp; Theory</a></li>
+                        <li><a href="http://cooking.stackexchange.com/" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com/" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="http://money.stackexchange.com/" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://academia.stackexchange.com/" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (8)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com/" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com/" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com/" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com/" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com/" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://ell.stackexchange.com/" title="speakers of other languages learning English">English Language Learners</a></li>
+                        <li><a href="http://japanese.stackexchange.com/" title="students, teachers, and linguists wanting to discuss the finer points of the Japanese language">Japanese Language</a></li>
+                        <li><a href="http://gaming.stackexchange.com/" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://bicycles.stackexchange.com/" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com/" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                        <li><a href="http://anime.stackexchange.com/" title="anime and manga fans">Anime &amp; Manga</a></li>
+                        <li><a href="http://mechanics.stackexchange.com/" title="mechanics and DIY enthusiast owners of cars, trucks, and motorcycles">Motor Vehicle Maintenance &amp; Repair</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (17)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://mathoverflow.net/" title="professional mathematicians">MathOverflow</a></li>
+                        <li><a href="http://math.stackexchange.com/" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com/" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com/" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com/" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="http://chemistry.stackexchange.com/" title="scientists, academics, teachers and students">Chemistry</a></li>
+                        <li><a href="http://biology.stackexchange.com/" title="biology researchers, academics, and students">Biology</a></li>
+                        <li><a href="http://cs.stackexchange.com/" title="students, researchers and practitioners of computer science">Computer Science</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://philosophy.stackexchange.com/" title="those interested in the study of the fundamental nature of knowledge, reality, and existence">Philosophy</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (3)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://meta.stackexchange.com/" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="http://stackapps.com/" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://area51.stackexchange.com/" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="https://www.stackoverflowbusiness.com/talent">Stack Overflow Talent</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</tbody></table>
+                </div>
+            </div>
+            <div id="copyright">
+                site design / logo © 2017 Stack Exchange Inc; user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2017.1.7.24586
+            </div>
+                </div>
+    </div>
+    <noscript>
+        &lt;div id="noscript-warning"&gt;Stack Overflow works best with JavaScript enabled&lt;img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"&gt;&lt;/div&gt;
+    </noscript>
+
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    
+    
+        
+        ados.run.push(function () {
+                setTimeout(function () { $("#adzerk-user-match").remove(); }, window.AUMIframeDone ? 0 : 2000);
+                ados_setKeywords('graphviz');; ados_load();
+        });   
+        
+</script>
+
+    <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            
+                ga('create', 'UA-5620270-1');
+                
+        ga('create', 'UA-5620270-59', 'auto', 'pageData');
+        
+                ga('set', 'dimension2', '|graphviz|');                     ga('pageData.set', 'dimension2', '|graphviz|');             ga('send', 'pageview');
+                ga('pageData.send', 'pageview');
+
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+                qc.async = true;
+                qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                s.parentNode.insertBefore(qc, s);
+                _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+                            var sc=document.createElement('script');
+                sc.async=true;
+                sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+                s.parentNode.insertBefore(sc, s);
+                _comscore.push({ c1: "2", c2: "17440561" });
+        })();
+
+    </script>
+        
+    
+            <script type="text/javascript">
+                
+                (function(appendChild) {
+                    Node.prototype.appendChild = function() {
+                        var parent = this;
+                        var newNode = arguments[0];
+                        if (parent.nodeName === 'HEAD'
+                            && newNode
+                            && newNode.nodeName === 'SCRIPT'
+                            && newNode.src) {
+                            
+                            window.setTimeout(function() {
+                                var result = newNode.src.match(/^https:\/\/maps\.googleapis\.com\/maps\/api\/place\/js\/(\w+)Service\./i) || [];
+                                var service = result[1];
+                                if (service) {
+                                    if (service === 'Autocompletion') service =  2;
+                                    else if (service === 'Place') service = 1;
+                                    else service = 0;
+                                    StackExchange.using('gps', function() {
+                                        StackExchange.gps.track('google_maps_places_api.call', { service: service });
+                                    });
+                                }
+                            }, 0);
+                        }
+                        return appendChild.apply(this, arguments);
+                    };
+                })(Node.prototype.appendChild);
+            </script>
+    
+<img src="http://clc.stackoverflow.com/timeout.gif" hidden="" style="display: none !important;"></body></html>

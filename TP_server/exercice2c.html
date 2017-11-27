@@ -1,0 +1,38 @@
+<html>
+	<head>
+	<title>Form - Ex2c</title>
+	</head>
+	<body>
+	<form action="http://localhost:8000/" method="post">
+		Name:<br>
+		<input type="text" name="name" value="John Doe">
+		<br>
+		<input type="submit" value="Submit">
+	</form> 
+		
+	<br><p>Have fun with these: <br>
+	
+	<form action="http://localhost:8000/" method="post">
+		Name:
+		<input type="text" name="name" value="æâ€ê¢þ©ÿû   êþÿû">
+		<input type="submit" value="Submit">
+	</form> 
+	<form action="http://localhost:8000/" method="post">
+		Name:
+		<input type="text" name="name" value="<h1>">
+		<input type="submit" value="Submit">
+	</form> 
+	<form action="http://localhost:8000/" method="post">
+		Name:
+		<input type="text" name="name" value="<script>alert('coucou');</script>">
+		<input type="submit" value="Submit">
+	</form> 
+	<form action="http://localhost:8000/" method="post">
+		Name:
+		<input type="text" name="name" value="ἄλφαβῆταγάμμα">
+		<input type="submit" value="Submit">
+	</form> 
+	
+</p> 
+	</body>
+</html>

@@ -1,0 +1,84 @@
+Nom: Herbelot
+Prénom: Loïc
+
+Question 1a:
+Le code source contient juste une phrase (« Ma page personnelle de Telecom ParisTech ») alors que l'inspecteur d'élements montre la présence de balises HTML ("head", "body"...).
+
+Question 1b:
+On peut indiquer une mise en valeur de certains mots avec la balise <em> (EMphase). En général cette balise a le même comportement que <i> (mise en italique) mais <i> sert à mettre en forme alors que <em> sert plutôt à indiquer l'importance de certains mots.
+Les balises HTML servent à indiquer l'utilité/la fonction de chaque élement, si c'est un lien, un titre de 1er, 2e niveau, du texte, du texte important, une citation...
+
+
+Question 1c: 
+L'onglet/la fenêtre du navigateur ne porte plus le titre "adresse/aaa/bbb/page.html" mais "Ceci est une page de test". La balise <title> sert à définir un titre pour la page.
+
+La structure d'une page HTML est en général la suivante :
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN""http://www.w3.org/TR/html4/strict.dtd">
+<!-- Détermine le type de fichier et le langage utilisé -->
+<html>
+	<head>
+		<!-- Métadonnées telles que le titre, les liens vers des feuilles de style, les scripts...
+		<title>Page title</title>
+	</head>
+	
+	<body>
+		<!-- Le corps de la page -->
+	</body>
+	
+</html>
+
+Question 1d:
+La balise <div> permet de définir des blocs de données, pour différencier le pied de page du corps de la page, et de l'en-tête par exemple, mais aussi pour différencier différents articles entre eux, ou pour conserver un menu latéral dans la page par exemple.
+Les balises sémantiques (<header>, <nav>, <footer>, <section>, <article> et <aside> p.ex.) remplacent l'usage historique de la balise "<div>". Au lieu d'avoir
+<div class="header"><div> on a <header>...<header>, de même pour les autres balises, ce qui facilite la rédaction et la compréhension de code HTML.
+
+
+Question 1e: 
+Le fichier est un peu long et incompréhensible, il résulte d'un éditeur WYSIWYG.
+
+Question 1f: En enlevant la balise de fermeture </h1> du titre, on change tout l'affichage de la page : 
+À la ligne 9 :
+< 			<h1>Ma page personnelle de Telecom ParisTech</h1>
+devient 
+> 			<h1>Ma page personnelle de Telecom ParisTech
+
+En enlevant la fermeture de la balise <p> à la ligne 31, l'affichage ne change pas.
+
+À la ligne 31 : 
+< Sed [...] leo sodales.</p></div>
+Devient :
+> Sed [...] leo sodales.</div>
+
+
+Question 2a: Ajoutez au fichier exercice1d.html via des attributs style:
+
+sur l'image du div 1, du code CSS pour que le texte soit affiché à droite puis en bas de l'image
+La propriété « style="float:left" » permet que l'image soit affichée à gauche avec le texe qui borde l'image à droite, puis en bas.
+
+sur le second div, du code CSS qui définit un bord de 1 pixel d'épaisseur
+La propriété « style="border: 1px solid red" » permet de définir une bordure au bloc.
+
+sur le troisième div, du code CSS qui définit une couleur de fond gris clair.
+J'ai utilisé « style="background: lightgrey" » qui permet de définir une couleur d'arrière plan.
+
+
+Sauvegardez le résultat dans un fichier nommé exercice2a.html.
+
+Question 2b: Déplacez ces styles CSS dans un élément <style>. Sauvegardez le résultat dans un fichier nommé exercice2b.html. Expliquez ce que vous avez dû changer et les avantages/inconvénients de cette méthode.
+
+J'ai regroupé tous les attributs "style" dans la balise <style> du fichier html.
+
+Avantages : 
+- Tous les styles sont regroupés au même endroit, pas besoin de fouiller tout le code pour changer un style.
+- Tous les éléments qui ont le même nom/id/class auront le même style, ça permet d'harmoniser le design.
+
+Inconvénients :
+- Un peu plus fastidieux pour changer le style d'un seul élément parce qu'il faudrait lui définir un id via div.
+
+
+Question 2c: Supprimez ensuite cet élément <style> et utilisez cette feuille de style externe. Sauvegardez le résultat dans un fichier nommé exercice2c.html. Expliquez ce que vous avez dû changer et les avantages d'utiliser une feuille de style externe.
+
+J'ai supprimé la balise <style> et j'ai rajouté la balise <link> pour indiquer la présence et l'emplacement de la feuille de style.
+
+L'avantage d'avoir une feuille de style externe est que, comme un site est généralement composé de plusieurs pages, il est facile de changer le design de toutes ces pages différentes d'un coup, il suffit de mettre la même balise <link> et de modifier une seule feuille de style.
