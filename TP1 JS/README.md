@@ -1,12 +1,14 @@
+# Rendu du TP n°1:
+
 ## Pour tester le code :
 J'ai ajouté des bouts de code pour tester l'exécution des scripts, ils sont désactivés (commentés) par défaut. Ils sont reconnaissables par la façon de commenter : « __//~__ ».
 
 
-##Remarques sur l'exercice 2 :
+## Remarques sur l'exercice 2 :
 
 Pour résoudre cet exercice j'ai utilisé la fonction __Array.prototype.includes__ qui n'est pas activée par défaut dans NodeJS, il faut exécuter ce script avec « nodejs --harmony_array_includes » pour pouvoir utiliser cette fonction. Je n'ai pas redéfini cette fonction par souci de lisibilité.
 
-##Remarques sur l'exercice 3 :
+## Remarques sur l'exercice 3 :
 
 Utilise aussi __Array.prototype.includes__, donc à exécuter avec « nodejs --harmony_array_includes »
 Fichier d'exemple de promotion : __input_promo.json__.
