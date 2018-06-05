@@ -1,6 +1,6 @@
-#TP serveur
+# Rendu pour le TP serveur
 
-##Préambule :
+## Préambule :
 Concernant JSHint, les seules erreurs que j'ai sont :
 
 `Use the function form of "use strict".` que je choisis de ne pas corriger
@@ -24,9 +24,9 @@ que JShint soit informé que je travaille dans l'environnement NodeJS.
 
 
 
-##Exercice 1
+## Exercice 1
 
-###Question b)
+### Question b)
 cf le commentaire dans le code :
 
 	/*
@@ -39,13 +39,13 @@ cf le commentaire dans le code :
      * des requêtes pendant que 'fs' lit le fichier. 
      */
      
-###Question c)
+### Question c)
 Comme on récupère l'entrée de l'utilisateur ('?name=input'), et qu'on 
 l'insère directement dans le code HTML de la page, l'utilisateur peut 
 rentrer de code malicieux pour modifier la page, notamment du code HTML/
 JS/PHP.
 
-###Question d)
+### Question d)
 Si un utilisateur rentre du code malicieux, tous les autres utilisateurs
 auront leur page d'accueil modifiée car le serveur enregistre et affiche
 l'historique des connexions.
@@ -64,14 +64,14 @@ Ainsi, le navigateur affiche bien tous les caractères, mais le déboguage
 est un peu plus compliqué, étant donné que ce format est difficile à lire.
 
 
-##Exercice 2:
+## Exercice 2:
 
-###Question c)
+### Question c)
 
 J'ai réutilisé les méthodes pour échapper les caractères venant de l'entrée
 utilisateur, je n'ai pas de problème au niveau des injections XSS.
 
-###Questiond d)
+### Questiond d)
 
 Ici l'entrée est déjà echappée, donc pas besoin d'utiliser une fonction
 faite maison pour s'occuper de ça.
